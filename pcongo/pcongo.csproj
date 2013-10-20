@@ -307,6 +307,16 @@
     <Content Include="Resources\Desktop\Linux\licenses\GPL_license.txt" />
     <Content Include="Resources\Desktop\Linux\licenses\MIT_license.txt" />
     <Content Include="Resources\Desktop\Linux\robots.txt" />
+    <Content Include="Resources\Desktop\Windows\css\demo-styles.css" />
+    <Content Include="Resources\Desktop\Windows\images\1.png" />
+    <Content Include="Resources\Desktop\Windows\images\chrome.png" />
+    <Content Include="Resources\Desktop\Windows\images\firefox.png" />
+    <Content Include="Resources\Desktop\Windows\images\ie.png" />
+    <Content Include="Resources\Desktop\Windows\images\opera.png" />
+    <Content Include="Resources\Desktop\Windows\images\safari.png" />
+    <Content Include="Resources\Desktop\Windows\index.html" />
+    <Content Include="Resources\Desktop\Windows\js\jquery-1.8.2.min.js" />
+    <Content Include="Resources\Desktop\Windows\js\modernizr-1.5.min.js" />
     <Content Include="Resources\Images\LoginPage\slider1.jpg" />
     <Content Include="Resources\PcOnGo_Logo\pcongo128x128.png" />
     <Content Include="Resources\PcOnGo_Logo\pcongo150x115.png" />
@@ -380,6 +390,14 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\User\Windows.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Desktop\Windows\fonts\demo-icomoon.dev.svg" />
+    <Content Include="Resources\Desktop\Windows\fonts\demo-icomoon.eot" />
+    <Content Include="Resources\Desktop\Windows\fonts\demo-icomoon.svg" />
+    <Content Include="Resources\Desktop\Windows\fonts\demo-icomoon.ttf" />
+    <Content Include="Resources\Desktop\Windows\fonts\demo-icomoon.woff" />
+    <Content Include="Resources\Desktop\Windows\README.md" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
