@@ -148,6 +148,7 @@
     <Compile Include="aspnet_WebEvent_Events.cs">
       <DependentUpon>pcongoModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\UserController.cs" />
     <Compile Include="DefaultMenu.cs">
       <DependentUpon>pcongoModel.tt</DependentUpon>
@@ -207,6 +208,13 @@
     <Compile Include="SocialNetworkingUrl.cs">
       <DependentUpon>pcongoModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="Testing.aspx.cs">
+      <DependentUpon>Testing.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Testing.aspx.designer.cs">
+      <DependentUpon>Testing.aspx</DependentUpon>
+    </Compile>
     <Compile Include="user.cs">
       <DependentUpon>pcongoModel.tt</DependentUpon>
     </Compile>
@@ -228,6 +236,86 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Content Include="Global.asax" />
+    <Content Include="Resources\bootstrap\dist\css\bootstrap-theme.css" />
+    <Content Include="Resources\bootstrap\dist\css\bootstrap-theme.min.css" />
+    <Content Include="Resources\bootstrap\dist\css\bootstrap.css" />
+    <Content Include="Resources\bootstrap\dist\css\bootstrap.min.css" />
+    <Content Include="Resources\bootstrap\dist\css\carousel.css" />
+    <Content Include="Resources\bootstrap\dist\css\jumbotron.css" />
+    <Content Include="Resources\bootstrap\dist\js\bootstrap.js" />
+    <Content Include="Resources\bootstrap\dist\js\bootstrap.min.js" />
+    <Content Include="Resources\bootstrap\docs-assets\css\docs.css" />
+    <Content Include="Resources\bootstrap\docs-assets\css\pygments-manni.css" />
+    <Content Include="Resources\bootstrap\docs-assets\ico\apple-touch-icon-144-precomposed.png" />
+    <Content Include="Resources\bootstrap\docs-assets\ico\favicon.png" />
+    <Content Include="Resources\bootstrap\docs-assets\js\application.js" />
+    <Content Include="Resources\bootstrap\docs-assets\js\customizer.js" />
+    <Content Include="Resources\bootstrap\docs-assets\js\filesaver.js" />
+    <Content Include="Resources\bootstrap\docs-assets\js\holder.js" />
+    <Content Include="Resources\bootstrap\docs-assets\js\ie8-responsive-file-warning.js" />
+    <Content Include="Resources\bootstrap\docs-assets\js\jszip.js" />
+    <Content Include="Resources\bootstrap\docs-assets\js\less.js" />
+    <Content Include="Resources\bootstrap\docs-assets\js\raw-files.js" />
+    <Content Include="Resources\bootstrap\docs-assets\js\uglify.js" />
+    <Content Include="Resources\Desktop\Linux\ajax_load.html" />
+    <Content Include="Resources\Desktop\Linux\assets\images\gui\bar_bottom.png" />
+    <Content Include="Resources\Desktop\Linux\assets\images\gui\bar_top.png" />
+    <Content Include="Resources\Desktop\Linux\assets\images\gui\bar_top_link.png" />
+    <Content Include="Resources\Desktop\Linux\assets\images\gui\trans_black.png" />
+    <Content Include="Resources\Desktop\Linux\assets\images\gui\trans_white.png" />
+    <Content Include="Resources\Desktop\Linux\assets\images\gui\window_buttons.gif" />
+    <Content Include="Resources\Desktop\Linux\assets\images\gui\window_content.gif" />
+    <Content Include="Resources\Desktop\Linux\assets\images\gui\window_corner.gif" />
+    <Content Include="Resources\Desktop\Linux\assets\images\icons\icon_16_computer.png" />
+    <Content Include="Resources\Desktop\Linux\assets\images\icons\icon_16_disc.png" />
+    <Content Include="Resources\Desktop\Linux\assets\images\icons\icon_16_documents.png" />
+    <Content Include="Resources\Desktop\Linux\assets\images\icons\icon_16_drive.png" />
+    <Content Include="Resources\Desktop\Linux\assets\images\icons\icon_16_folder.png" />
+    <Content Include="Resources\Desktop\Linux\assets\images\icons\icon_16_folder_home.png" />
+    <Content Include="Resources\Desktop\Linux\assets\images\icons\icon_16_folder_remote.png" />
+    <Content Include="Resources\Desktop\Linux\assets\images\icons\icon_16_music.png" />
+    <Content Include="Resources\Desktop\Linux\assets\images\icons\icon_16_network.png" />
+    <Content Include="Resources\Desktop\Linux\assets\images\icons\icon_16_page.png" />
+    <Content Include="Resources\Desktop\Linux\assets\images\icons\icon_16_photo.png" />
+    <Content Include="Resources\Desktop\Linux\assets\images\icons\icon_16_server.png" />
+    <Content Include="Resources\Desktop\Linux\assets\images\icons\icon_16_system.png" />
+    <Content Include="Resources\Desktop\Linux\assets\images\icons\icon_16_trash.png" />
+    <Content Include="Resources\Desktop\Linux\assets\images\icons\icon_16_vpn.png" />
+    <Content Include="Resources\Desktop\Linux\assets\images\icons\icon_22_computer.png" />
+    <Content Include="Resources\Desktop\Linux\assets\images\icons\icon_22_desktop.png" />
+    <Content Include="Resources\Desktop\Linux\assets\images\icons\icon_22_disc.png" />
+    <Content Include="Resources\Desktop\Linux\assets\images\icons\icon_22_drive.png" />
+    <Content Include="Resources\Desktop\Linux\assets\images\icons\icon_22_network.png" />
+    <Content Include="Resources\Desktop\Linux\assets\images\icons\icon_22_recycle.png" />
+    <Content Include="Resources\Desktop\Linux\assets\images\icons\icon_32_computer.png" />
+    <Content Include="Resources\Desktop\Linux\assets\images\icons\icon_32_disc.png" />
+    <Content Include="Resources\Desktop\Linux\assets\images\icons\icon_32_drive.png" />
+    <Content Include="Resources\Desktop\Linux\assets\images\icons\icon_32_network.png" />
+    <Content Include="Resources\Desktop\Linux\assets\images\misc\album_cover.jpg" />
+    <Content Include="Resources\Desktop\Linux\assets\images\misc\firehost.png" />
+    <Content Include="Resources\Desktop\Linux\assets\images\misc\wallpaper.jpg" />
+    <Content Include="Resources\Desktop\Linux\assets\javascripts\jquery.desktop.js" />
+    <Content Include="Resources\Desktop\Linux\assets\javascripts\jquery.js" />
+    <Content Include="Resources\Desktop\Linux\assets\javascripts\jquery.ui.js" />
+    <Content Include="Resources\Desktop\Linux\assets\stylesheets\desktop.css" />
+    <Content Include="Resources\Desktop\Linux\assets\stylesheets\html.css" />
+    <Content Include="Resources\Desktop\Linux\assets\stylesheets\ie.css" />
+    <Content Include="Resources\Desktop\Linux\favicon.ico" />
+    <Content Include="Resources\Desktop\Linux\ie.html" />
+    <Content Include="Resources\Desktop\Linux\index.html" />
+    <Content Include="Resources\Desktop\Linux\licenses\GPL_license.txt" />
+    <Content Include="Resources\Desktop\Linux\licenses\MIT_license.txt" />
+    <Content Include="Resources\Desktop\Linux\robots.txt" />
+    <Content Include="Resources\Images\LoginPage\slider1.jpg" />
+    <Content Include="Resources\PcOnGo_Logo\pcongo128x128.png" />
+    <Content Include="Resources\PcOnGo_Logo\pcongo150x115.png" />
+    <Content Include="Resources\PcOnGo_Logo\pcongo155x100.png" />
+    <Content Include="Resources\PcOnGo_Logo\pcongo16x16.png" />
+    <Content Include="Resources\PcOnGo_Logo\pcongo180x115.png" />
+    <Content Include="Resources\PcOnGo_Logo\pcongo394x150.png" />
+    <Content Include="Resources\PcOnGo_Logo\pcongo75x75.png" />
+    <Content Include="Resources\PcOnGo_Logo\pcongo800x150.png" />
+    <Content Include="Testing.aspx" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -240,6 +328,7 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
+    <Folder Include="Resources\css\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
@@ -273,6 +362,24 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\User\Details.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Account\Login.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\bootstrap\dist\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Resources\bootstrap\dist\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Resources\bootstrap\dist\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Resources\bootstrap\dist\fonts\glyphicons-halflings-regular.woff" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Desktop\Linux\.gitignore" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\User\Linux.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\User\Windows.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

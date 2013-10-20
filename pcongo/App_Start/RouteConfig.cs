@@ -13,6 +13,10 @@ namespace pcongo
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
+            routes.MapRoute("Account",
+                "Account/{action}/{id}",
+                new { controller = "Account", id = UrlParameter.Optional });
+
             routes.MapRoute("Home",
                 "",
                 new { controller = "User", action = "Index" });
@@ -22,6 +26,8 @@ namespace pcongo
                 new { controller = "User", action = "Details" }
 
                 );
+
+            
         }
     }
 }
