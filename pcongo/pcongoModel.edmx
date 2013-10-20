@@ -1,0 +1,1872 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="pcongoModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2005" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="pcongoModelStoreContainer">
+          <EntitySet Name="aspnet_Applications" EntityType="pcongoModel.Store.aspnet_Applications" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="aspnet_Membership" EntityType="pcongoModel.Store.aspnet_Membership" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="aspnet_Paths" EntityType="pcongoModel.Store.aspnet_Paths" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="aspnet_PersonalizationAllUsers" EntityType="pcongoModel.Store.aspnet_PersonalizationAllUsers" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="aspnet_PersonalizationPerUser" EntityType="pcongoModel.Store.aspnet_PersonalizationPerUser" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="aspnet_Profile" EntityType="pcongoModel.Store.aspnet_Profile" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="aspnet_Roles" EntityType="pcongoModel.Store.aspnet_Roles" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="aspnet_SchemaVersions" EntityType="pcongoModel.Store.aspnet_SchemaVersions" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="aspnet_Users" EntityType="pcongoModel.Store.aspnet_Users" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="aspnet_UsersInRoles" EntityType="pcongoModel.Store.aspnet_UsersInRoles" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="aspnet_WebEvent_Events" EntityType="pcongoModel.Store.aspnet_WebEvent_Events" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Default_Page" EntityType="pcongoModel.Store.Default_Page" store:Type="Tables" store:Schema="dbo" store:Name="Default_Page">
+            <DefiningQuery>SELECT 
+      [Default_Page].[ID] AS [ID], 
+      [Default_Page].[Default_Title] AS [Default_Title], 
+      [Default_Page].[Default_Slider_Image] AS [Default_Slider_Image], 
+      [Default_Page].[Default_Widgets] AS [Default_Widgets], 
+      [Default_Page].[Default_Articles_Links] AS [Default_Articles_Links], 
+      [Default_Page].[Default_Menu_Links] AS [Default_Menu_Links], 
+      [Default_Page].[UserID] AS [UserID]
+      FROM [dbo].[Default_Page] AS [Default_Page]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="DefaultMenu" EntityType="pcongoModel.Store.DefaultMenu" store:Type="Tables" store:Schema="dbo" store:Name="DefaultMenu">
+            <DefiningQuery>SELECT 
+      [DefaultMenu].[Id] AS [Id], 
+      [DefaultMenu].[MenuNameId] AS [MenuNameId], 
+      [DefaultMenu].[MenuName] AS [MenuName], 
+      [DefaultMenu].[MenuDropDownId] AS [MenuDropDownId], 
+      [DefaultMenu].[MenuDropDown] AS [MenuDropDown], 
+      [DefaultMenu].[UserId] AS [UserId], 
+      [DefaultMenu].[MenuUrl] AS [MenuUrl]
+      FROM [dbo].[DefaultMenu] AS [DefaultMenu]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="FolderIcons" EntityType="pcongoModel.Store.FolderIcons" store:Type="Tables" store:Schema="dbo" store:Name="FolderIcons">
+            <DefiningQuery>SELECT 
+      [FolderIcons].[Id] AS [Id], 
+      [FolderIcons].[IconName] AS [IconName], 
+      [FolderIcons].[IconUrl16x16] AS [IconUrl16x16], 
+      [FolderIcons].[IconUrl32x32] AS [IconUrl32x32], 
+      [FolderIcons].[IconUrl64x64] AS [IconUrl64x64], 
+      [FolderIcons].[IconUrl128x128] AS [IconUrl128x128], 
+      [FolderIcons].[IconUrl256x256] AS [IconUrl256x256]
+      FROM [dbo].[FolderIcons] AS [FolderIcons]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="LatestComment" EntityType="pcongoModel.Store.LatestComment" store:Type="Tables" store:Schema="dbo" store:Name="LatestComment">
+            <DefiningQuery>SELECT 
+      [LatestComment].[Id] AS [Id], 
+      [LatestComment].[Name] AS [Name], 
+      [LatestComment].[Url] AS [Url], 
+      [LatestComment].[UrlText] AS [UrlText], 
+      [LatestComment].[Time] AS [Time], 
+      [LatestComment].[Heading] AS [Heading], 
+      [LatestComment].[Message] AS [Message], 
+      [LatestComment].[UserId] AS [UserId]
+      FROM [dbo].[LatestComment] AS [LatestComment]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="LatestNews" EntityType="pcongoModel.Store.LatestNews" store:Type="Tables" store:Schema="dbo" store:Name="LatestNews">
+            <DefiningQuery>SELECT 
+      [LatestNews].[Id] AS [Id], 
+      [LatestNews].[Url] AS [Url], 
+      [LatestNews].[ShortInfo] AS [ShortInfo], 
+      [LatestNews].[Message] AS [Message], 
+      [LatestNews].[UserId] AS [UserId]
+      FROM [dbo].[LatestNews] AS [LatestNews]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="LoadImages" EntityType="pcongoModel.Store.LoadImages" store:Type="Tables" store:Schema="dbo" store:Name="LoadImages">
+            <DefiningQuery>SELECT 
+      [LoadImages].[Id] AS [Id], 
+      [LoadImages].[ImageId] AS [ImageId], 
+      [LoadImages].[ImageUrl] AS [ImageUrl], 
+      [LoadImages].[ToolTip] AS [ToolTip], 
+      [LoadImages].[Alt] AS [Alt], 
+      [LoadImages].[Select_Image_Type] AS [Select_Image_Type], 
+      [LoadImages].[UserId] AS [UserId], 
+      [LoadImages].[page] AS [page]
+      FROM [dbo].[LoadImages] AS [LoadImages]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="LoadTexts" EntityType="pcongoModel.Store.LoadTexts" store:Type="Tables" store:Schema="dbo" store:Name="LoadTexts">
+            <DefiningQuery>SELECT 
+      [LoadTexts].[Id] AS [Id], 
+      [LoadTexts].[TextId] AS [TextId], 
+      [LoadTexts].[Text] AS [Text], 
+      [LoadTexts].[UserId] AS [UserId], 
+      [LoadTexts].[TypeConstraint] AS [TypeConstraint], 
+      [LoadTexts].[page] AS [page], 
+      [LoadTexts].[Type] AS [Type]
+      FROM [dbo].[LoadTexts] AS [LoadTexts]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="Mandrill" EntityType="pcongoModel.Store.Mandrill" store:Type="Tables" store:Schema="dbo" store:Name="Mandrill">
+            <DefiningQuery>SELECT 
+      [Mandrill].[id] AS [id], 
+      [Mandrill].[ts] AS [ts], 
+      [Mandrill].[event] AS [event], 
+      [Mandrill].[mssgtext] AS [mssgtext], 
+      [Mandrill].[mssghtml] AS [mssghtml], 
+      [Mandrill].[mssgfromemail] AS [mssgfromemail], 
+      [Mandrill].[mssgfromname] AS [mssgfromname], 
+      [Mandrill].[mssgemail] AS [mssgemail], 
+      [Mandrill].[mssgsubject] AS [mssgsubject], 
+      [Mandrill].[mssgsender] AS [mssgsender], 
+      [Mandrill].[mssgattachments] AS [mssgattachments]
+      FROM [dbo].[Mandrill] AS [Mandrill]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="odesk" EntityType="pcongoModel.Store.odesk" store:Type="Tables" store:Schema="dbo" store:Name="odesk">
+            <DefiningQuery>SELECT 
+      [odesk].[id] AS [id], 
+      [odesk].[Date_from] AS [Date_from], 
+      [odesk].[Date_to] AS [Date_to], 
+      [odesk].[firstname] AS [firstname], 
+      [odesk].[lastname] AS [lastname], 
+      [odesk].[emailid] AS [emailid], 
+      [odesk].[contactno] AS [contactno], 
+      [odesk].[amount] AS [amount], 
+      [odesk].[noofdays] AS [noofdays], 
+      [odesk].[code] AS [code]
+      FROM [dbo].[odesk] AS [odesk]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="PageInfo" EntityType="pcongoModel.Store.PageInfo" store:Type="Tables" store:Schema="dbo" store:Name="PageInfo">
+            <DefiningQuery>SELECT 
+      [PageInfo].[Id] AS [Id], 
+      [PageInfo].[TextId] AS [TextId], 
+      [PageInfo].[TextContent] AS [TextContent], 
+      [PageInfo].[PageNo] AS [PageNo], 
+      [PageInfo].[UserId] AS [UserId]
+      FROM [dbo].[PageInfo] AS [PageInfo]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="SliderImage" EntityType="pcongoModel.Store.SliderImage" store:Type="Tables" store:Schema="dbo" store:Name="SliderImage">
+            <DefiningQuery>SELECT 
+      [SliderImage].[Id] AS [Id], 
+      [SliderImage].[ImageUrlId] AS [ImageUrlId], 
+      [SliderImage].[ImageUrl] AS [ImageUrl], 
+      [SliderImage].[ThumbUrlId] AS [ThumbUrlId], 
+      [SliderImage].[ThumbUrl] AS [ThumbUrl], 
+      [SliderImage].[HeadingId] AS [HeadingId], 
+      [SliderImage].[Heading] AS [Heading], 
+      [SliderImage].[ContentId] AS [ContentId], 
+      [SliderImage].[ContentText] AS [ContentText], 
+      [SliderImage].[UrlId] AS [UrlId], 
+      [SliderImage].[Url] AS [Url], 
+      [SliderImage].[UrlTextId] AS [UrlTextId], 
+      [SliderImage].[UrlText] AS [UrlText], 
+      [SliderImage].[UserId] AS [UserId]
+      FROM [dbo].[SliderImage] AS [SliderImage]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="SlidingArticle" EntityType="pcongoModel.Store.SlidingArticle" store:Type="Tables" store:Schema="dbo" store:Name="SlidingArticle">
+            <DefiningQuery>SELECT 
+      [SlidingArticle].[Id] AS [Id], 
+      [SlidingArticle].[HeadingId] AS [HeadingId], 
+      [SlidingArticle].[Heading] AS [Heading], 
+      [SlidingArticle].[UrlId1] AS [UrlId1], 
+      [SlidingArticle].[Url2] AS [Url2], 
+      [SlidingArticle].[UrlId2] AS [UrlId2], 
+      [SlidingArticle].[Url3] AS [Url3], 
+      [SlidingArticle].[UrlId3] AS [UrlId3], 
+      [SlidingArticle].[Url1] AS [Url1], 
+      [SlidingArticle].[ImageId1] AS [ImageId1], 
+      [SlidingArticle].[ImageUrl1] AS [ImageUrl1], 
+      [SlidingArticle].[ImageTooltip1] AS [ImageTooltip1], 
+      [SlidingArticle].[ImageAlt1] AS [ImageAlt1], 
+      [SlidingArticle].[ContentId1] AS [ContentId1], 
+      [SlidingArticle].[Content1] AS [Content1], 
+      [SlidingArticle].[ImageId2] AS [ImageId2], 
+      [SlidingArticle].[ImageUrl2] AS [ImageUrl2], 
+      [SlidingArticle].[ImageTooltip2] AS [ImageTooltip2], 
+      [SlidingArticle].[ImageAlt2] AS [ImageAlt2], 
+      [SlidingArticle].[ContentId2] AS [ContentId2], 
+      [SlidingArticle].[Content2] AS [Content2], 
+      [SlidingArticle].[ImageId3] AS [ImageId3], 
+      [SlidingArticle].[ImageUrl3] AS [ImageUrl3], 
+      [SlidingArticle].[ImageTooltip3] AS [ImageTooltip3], 
+      [SlidingArticle].[ImageAlt3] AS [ImageAlt3], 
+      [SlidingArticle].[ContentId3] AS [ContentId3], 
+      [SlidingArticle].[Content3] AS [Content3], 
+      [SlidingArticle].[UserId] AS [UserId]
+      FROM [dbo].[SlidingArticle] AS [SlidingArticle]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="SocialNetworkingUrl" EntityType="pcongoModel.Store.SocialNetworkingUrl" store:Type="Tables" store:Schema="dbo" store:Name="SocialNetworkingUrl">
+            <DefiningQuery>SELECT 
+      [SocialNetworkingUrl].[Id] AS [Id], 
+      [SocialNetworkingUrl].[UrlId] AS [UrlId], 
+      [SocialNetworkingUrl].[Url] AS [Url], 
+      [SocialNetworkingUrl].[ImageId] AS [ImageId], 
+      [SocialNetworkingUrl].[ImageUrl] AS [ImageUrl], 
+      [SocialNetworkingUrl].[Alt] AS [Alt], 
+      [SocialNetworkingUrl].[ToolTip] AS [ToolTip], 
+      [SocialNetworkingUrl].[UserId] AS [UserId]
+      FROM [dbo].[SocialNetworkingUrl] AS [SocialNetworkingUrl]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="UserBackgroundImage" EntityType="pcongoModel.Store.UserBackgroundImage" store:Type="Tables" store:Schema="dbo" store:Name="UserBackgroundImage">
+            <DefiningQuery>SELECT 
+      [UserBackgroundImage].[Bid] AS [Bid], 
+      [UserBackgroundImage].[ImageUrl] AS [ImageUrl], 
+      [UserBackgroundImage].[UserId] AS [UserId], 
+      [UserBackgroundImage].[ImageUrlToDel] AS [ImageUrlToDel], 
+      [UserBackgroundImage].[path] AS [path]
+      FROM [dbo].[UserBackgroundImage] AS [UserBackgroundImage]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="UserFolder" EntityType="pcongoModel.Store.UserFolder" store:Type="Tables" store:Schema="dbo" store:Name="UserFolder">
+            <DefiningQuery>SELECT 
+      [UserFolder].[FId] AS [FId], 
+      [UserFolder].[FolderIconName] AS [FolderIconName], 
+      [UserFolder].[FolderImageUrl] AS [FolderImageUrl], 
+      [UserFolder].[FolderTopImageIconUrl] AS [FolderTopImageIconUrl], 
+      [UserFolder].[FolderTopTitle] AS [FolderTopTitle], 
+      [UserFolder].[FolderLeftDiv] AS [FolderLeftDiv], 
+      [UserFolder].[FolderRightDiv] AS [FolderRightDiv], 
+      [UserFolder].[FolderBottomText] AS [FolderBottomText], 
+      [UserFolder].[Username] AS [Username]
+      FROM [dbo].[UserFolder] AS [UserFolder]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="UserMemorySpace" EntityType="pcongoModel.Store.UserMemorySpace" store:Type="Tables" store:Schema="dbo" store:Name="UserMemorySpace">
+            <DefiningQuery>SELECT 
+      [UserMemorySpace].[id] AS [id], 
+      [UserMemorySpace].[c_drive] AS [c_drive], 
+      [UserMemorySpace].[d_drive] AS [d_drive], 
+      [UserMemorySpace].[e_drive] AS [e_drive], 
+      [UserMemorySpace].[username] AS [username]
+      FROM [dbo].[UserMemorySpace] AS [UserMemorySpace]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="users" EntityType="pcongoModel.Store.users" store:Type="Tables" store:Schema="dbo" store:Name="users">
+            <DefiningQuery>SELECT 
+      [users].[Id] AS [Id], 
+      [users].[Username] AS [Username], 
+      [users].[Password] AS [Password], 
+      [users].[Role] AS [Role], 
+      [users].[IsActive] AS [IsActive], 
+      [users].[LastActivityDate] AS [LastActivityDate], 
+      [users].[FirstName] AS [FirstName], 
+      [users].[LastName] AS [LastName], 
+      [users].[Email] AS [Email], 
+      [users].[UserImage] AS [UserImage]
+      FROM [dbo].[users] AS [users]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="UtopiansTimeLine" EntityType="pcongoModel.Store.UtopiansTimeLine" store:Type="Tables" store:Schema="dbo" store:Name="UtopiansTimeLine">
+            <DefiningQuery>SELECT 
+      [UtopiansTimeLine].[Id] AS [Id], 
+      [UtopiansTimeLine].[evId] AS [evId], 
+      [UtopiansTimeLine].[evName] AS [evName], 
+      [UtopiansTimeLine].[evDate] AS [evDate]
+      FROM [dbo].[UtopiansTimeLine] AS [UtopiansTimeLine]</DefiningQuery>
+          </EntitySet>
+          <AssociationSet Name="FK__aspnet_Me__Appli__145C0A3F" Association="pcongoModel.Store.FK__aspnet_Me__Appli__145C0A3F">
+            <End Role="aspnet_Applications" EntitySet="aspnet_Applications" />
+            <End Role="aspnet_Membership" EntitySet="aspnet_Membership" />
+          </AssociationSet>
+          <AssociationSet Name="FK__aspnet_Me__UserI__15502E78" Association="pcongoModel.Store.FK__aspnet_Me__UserI__15502E78">
+            <End Role="aspnet_Users" EntitySet="aspnet_Users" />
+            <End Role="aspnet_Membership" EntitySet="aspnet_Membership" />
+          </AssociationSet>
+          <AssociationSet Name="FK__aspnet_Pa__Appli__45F365D3" Association="pcongoModel.Store.FK__aspnet_Pa__Appli__45F365D3">
+            <End Role="aspnet_Applications" EntitySet="aspnet_Applications" />
+            <End Role="aspnet_Paths" EntitySet="aspnet_Paths" />
+          </AssociationSet>
+          <AssociationSet Name="FK__aspnet_Pe__PathI__4BAC3F29" Association="pcongoModel.Store.FK__aspnet_Pe__PathI__4BAC3F29">
+            <End Role="aspnet_Paths" EntitySet="aspnet_Paths" />
+            <End Role="aspnet_PersonalizationAllUsers" EntitySet="aspnet_PersonalizationAllUsers" />
+          </AssociationSet>
+          <AssociationSet Name="FK__aspnet_Pe__PathI__4F7CD00D" Association="pcongoModel.Store.FK__aspnet_Pe__PathI__4F7CD00D">
+            <End Role="aspnet_Paths" EntitySet="aspnet_Paths" />
+            <End Role="aspnet_PersonalizationPerUser" EntitySet="aspnet_PersonalizationPerUser" />
+          </AssociationSet>
+          <AssociationSet Name="FK__aspnet_Pe__UserI__5070F446" Association="pcongoModel.Store.FK__aspnet_Pe__UserI__5070F446">
+            <End Role="aspnet_Users" EntitySet="aspnet_Users" />
+            <End Role="aspnet_PersonalizationPerUser" EntitySet="aspnet_PersonalizationPerUser" />
+          </AssociationSet>
+          <AssociationSet Name="FK__aspnet_Pr__UserI__29572725" Association="pcongoModel.Store.FK__aspnet_Pr__UserI__29572725">
+            <End Role="aspnet_Users" EntitySet="aspnet_Users" />
+            <End Role="aspnet_Profile" EntitySet="aspnet_Profile" />
+          </AssociationSet>
+          <AssociationSet Name="FK__aspnet_Ro__Appli__32E0915F" Association="pcongoModel.Store.FK__aspnet_Ro__Appli__32E0915F">
+            <End Role="aspnet_Applications" EntitySet="aspnet_Applications" />
+            <End Role="aspnet_Roles" EntitySet="aspnet_Roles" />
+          </AssociationSet>
+          <AssociationSet Name="FK__aspnet_Us__Appli__0425A276" Association="pcongoModel.Store.FK__aspnet_Us__Appli__0425A276">
+            <End Role="aspnet_Applications" EntitySet="aspnet_Applications" />
+            <End Role="aspnet_Users" EntitySet="aspnet_Users" />
+          </AssociationSet>
+          <AssociationSet Name="FK__aspnet_Us__RoleI__37A5467C" Association="pcongoModel.Store.FK__aspnet_Us__RoleI__37A5467C">
+            <End Role="aspnet_Roles" EntitySet="aspnet_Roles" />
+            <End Role="aspnet_UsersInRoles" EntitySet="aspnet_UsersInRoles" />
+          </AssociationSet>
+          <AssociationSet Name="FK__aspnet_Us__UserI__36B12243" Association="pcongoModel.Store.FK__aspnet_Us__UserI__36B12243">
+            <End Role="aspnet_Users" EntitySet="aspnet_Users" />
+            <End Role="aspnet_UsersInRoles" EntitySet="aspnet_UsersInRoles" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="aspnet_Applications">
+          <Key>
+            <PropertyRef Name="ApplicationId" />
+          </Key>
+          <Property Name="ApplicationName" Type="nvarchar" Nullable="false" MaxLength="256" />
+          <Property Name="LoweredApplicationName" Type="nvarchar" Nullable="false" MaxLength="256" />
+          <Property Name="ApplicationId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="Description" Type="nvarchar" MaxLength="256" />
+        </EntityType>
+        <EntityType Name="aspnet_Membership">
+          <Key>
+            <PropertyRef Name="UserId" />
+          </Key>
+          <Property Name="ApplicationId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="UserId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="Password" Type="nvarchar" Nullable="false" MaxLength="128" />
+          <Property Name="PasswordFormat" Type="int" Nullable="false" />
+          <Property Name="PasswordSalt" Type="nvarchar" Nullable="false" MaxLength="128" />
+          <Property Name="MobilePIN" Type="nvarchar" MaxLength="16" />
+          <Property Name="Email" Type="nvarchar" MaxLength="256" />
+          <Property Name="LoweredEmail" Type="nvarchar" MaxLength="256" />
+          <Property Name="PasswordQuestion" Type="nvarchar" MaxLength="256" />
+          <Property Name="PasswordAnswer" Type="nvarchar" MaxLength="128" />
+          <Property Name="IsApproved" Type="bit" Nullable="false" />
+          <Property Name="IsLockedOut" Type="bit" Nullable="false" />
+          <Property Name="CreateDate" Type="datetime" Nullable="false" />
+          <Property Name="LastLoginDate" Type="datetime" Nullable="false" />
+          <Property Name="LastPasswordChangedDate" Type="datetime" Nullable="false" />
+          <Property Name="LastLockoutDate" Type="datetime" Nullable="false" />
+          <Property Name="FailedPasswordAttemptCount" Type="int" Nullable="false" />
+          <Property Name="FailedPasswordAttemptWindowStart" Type="datetime" Nullable="false" />
+          <Property Name="FailedPasswordAnswerAttemptCount" Type="int" Nullable="false" />
+          <Property Name="FailedPasswordAnswerAttemptWindowStart" Type="datetime" Nullable="false" />
+          <Property Name="Comment" Type="ntext" />
+        </EntityType>
+        <EntityType Name="aspnet_Paths">
+          <Key>
+            <PropertyRef Name="PathId" />
+          </Key>
+          <Property Name="ApplicationId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="PathId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="Path" Type="nvarchar" Nullable="false" MaxLength="256" />
+          <Property Name="LoweredPath" Type="nvarchar" Nullable="false" MaxLength="256" />
+        </EntityType>
+        <EntityType Name="aspnet_PersonalizationAllUsers">
+          <Key>
+            <PropertyRef Name="PathId" />
+          </Key>
+          <Property Name="PathId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="PageSettings" Type="image" Nullable="false" />
+          <Property Name="LastUpdatedDate" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="aspnet_PersonalizationPerUser">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="PathId" Type="uniqueidentifier" />
+          <Property Name="UserId" Type="uniqueidentifier" />
+          <Property Name="PageSettings" Type="image" Nullable="false" />
+          <Property Name="LastUpdatedDate" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="aspnet_Profile">
+          <Key>
+            <PropertyRef Name="UserId" />
+          </Key>
+          <Property Name="UserId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="PropertyNames" Type="ntext" Nullable="false" />
+          <Property Name="PropertyValuesString" Type="ntext" Nullable="false" />
+          <Property Name="PropertyValuesBinary" Type="image" Nullable="false" />
+          <Property Name="LastUpdatedDate" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="aspnet_Roles">
+          <Key>
+            <PropertyRef Name="RoleId" />
+          </Key>
+          <Property Name="ApplicationId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="RoleId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="RoleName" Type="nvarchar" Nullable="false" MaxLength="256" />
+          <Property Name="LoweredRoleName" Type="nvarchar" Nullable="false" MaxLength="256" />
+          <Property Name="Description" Type="nvarchar" MaxLength="256" />
+        </EntityType>
+        <EntityType Name="aspnet_SchemaVersions">
+          <Key>
+            <PropertyRef Name="Feature" />
+            <PropertyRef Name="CompatibleSchemaVersion" />
+          </Key>
+          <Property Name="Feature" Type="nvarchar" Nullable="false" MaxLength="128" />
+          <Property Name="CompatibleSchemaVersion" Type="nvarchar" Nullable="false" MaxLength="128" />
+          <Property Name="IsCurrentVersion" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="aspnet_Users">
+          <Key>
+            <PropertyRef Name="UserId" />
+          </Key>
+          <Property Name="ApplicationId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="UserId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="UserName" Type="nvarchar" Nullable="false" MaxLength="256" />
+          <Property Name="LoweredUserName" Type="nvarchar" Nullable="false" MaxLength="256" />
+          <Property Name="MobileAlias" Type="nvarchar" MaxLength="16" />
+          <Property Name="IsAnonymous" Type="bit" Nullable="false" />
+          <Property Name="LastActivityDate" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="aspnet_UsersInRoles">
+          <Key>
+            <PropertyRef Name="UserId" />
+            <PropertyRef Name="RoleId" />
+          </Key>
+          <Property Name="UserId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="RoleId" Type="uniqueidentifier" Nullable="false" />
+        </EntityType>
+        <EntityType Name="aspnet_WebEvent_Events">
+          <Key>
+            <PropertyRef Name="EventId" />
+          </Key>
+          <Property Name="EventId" Type="char" Nullable="false" MaxLength="32" />
+          <Property Name="EventTimeUtc" Type="datetime" Nullable="false" />
+          <Property Name="EventTime" Type="datetime" Nullable="false" />
+          <Property Name="EventType" Type="nvarchar" Nullable="false" MaxLength="256" />
+          <Property Name="EventSequence" Type="decimal" Nullable="false" Precision="19" />
+          <Property Name="EventOccurrence" Type="decimal" Nullable="false" Precision="19" />
+          <Property Name="EventCode" Type="int" Nullable="false" />
+          <Property Name="EventDetailCode" Type="int" Nullable="false" />
+          <Property Name="Message" Type="nvarchar" MaxLength="1024" />
+          <Property Name="ApplicationPath" Type="nvarchar" MaxLength="256" />
+          <Property Name="ApplicationVirtualPath" Type="nvarchar" MaxLength="256" />
+          <Property Name="MachineName" Type="nvarchar" Nullable="false" MaxLength="256" />
+          <Property Name="RequestUrl" Type="nvarchar" MaxLength="1024" />
+          <Property Name="ExceptionType" Type="nvarchar" MaxLength="256" />
+          <Property Name="Details" Type="ntext" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'UtopiansDatabase.dbo.Default_Page' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="Default_Page">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Default_Title" Type="varchar(max)" />
+          <Property Name="Default_Slider_Image" Type="varchar(max)" />
+          <Property Name="Default_Widgets" Type="varchar(max)" />
+          <Property Name="Default_Articles_Links" Type="varchar(max)" />
+          <Property Name="Default_Menu_Links" Type="varchar(max)" />
+          <Property Name="UserID" Type="varchar" MaxLength="100" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'UtopiansDatabase.dbo.DefaultMenu' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="DefaultMenu">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="MenuNameId" Type="varchar" MaxLength="100" />
+          <Property Name="MenuName" Type="varchar" MaxLength="500" />
+          <Property Name="MenuDropDownId" Type="varchar" MaxLength="100" />
+          <Property Name="MenuDropDown" Type="varchar(max)" />
+          <Property Name="UserId" Type="varchar" MaxLength="100" />
+          <Property Name="MenuUrl" Type="varchar" MaxLength="100" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'UtopiansDatabase.dbo.FolderIcons' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="FolderIcons">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="IconName" Type="varchar" MaxLength="100" />
+          <Property Name="IconUrl16x16" Type="varchar" MaxLength="100" />
+          <Property Name="IconUrl32x32" Type="varchar" MaxLength="100" />
+          <Property Name="IconUrl64x64" Type="varchar" MaxLength="100" />
+          <Property Name="IconUrl128x128" Type="varchar" MaxLength="100" />
+          <Property Name="IconUrl256x256" Type="varchar" MaxLength="100" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'UtopiansDatabase.dbo.LatestComment' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="LatestComment">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="varchar" MaxLength="100" />
+          <Property Name="Url" Type="varchar" MaxLength="100" />
+          <Property Name="UrlText" Type="varchar" MaxLength="200" />
+          <Property Name="Time" Type="varchar" MaxLength="100" />
+          <Property Name="Heading" Type="varchar" MaxLength="300" />
+          <Property Name="Message" Type="varchar(max)" />
+          <Property Name="UserId" Type="varchar" MaxLength="100" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'UtopiansDatabase.dbo.LatestNews' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="LatestNews">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Url" Type="varchar" MaxLength="200" />
+          <Property Name="ShortInfo" Type="varchar" MaxLength="200" />
+          <Property Name="Message" Type="varchar(max)" />
+          <Property Name="UserId" Type="varchar" MaxLength="100" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'UtopiansDatabase.dbo.LoadImages' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="LoadImages">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="ImageId" Type="varchar" MaxLength="100" />
+          <Property Name="ImageUrl" Type="varchar" MaxLength="200" />
+          <Property Name="ToolTip" Type="varchar" MaxLength="1000" />
+          <Property Name="Alt" Type="varchar" MaxLength="1000" />
+          <Property Name="Select_Image_Type" Type="varchar" MaxLength="100" />
+          <Property Name="UserId" Type="varchar" MaxLength="100" />
+          <Property Name="page" Type="varchar" MaxLength="100" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'UtopiansDatabase.dbo.LoadTexts' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="LoadTexts">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="TextId" Type="varchar" MaxLength="100" />
+          <Property Name="Text" Type="varchar(max)" />
+          <Property Name="UserId" Type="varchar" MaxLength="100" />
+          <Property Name="TypeConstraint" Type="varchar" MaxLength="100" />
+          <Property Name="page" Type="varchar" MaxLength="100" />
+          <Property Name="Type" Type="varchar" MaxLength="100" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'UtopiansDatabase.dbo.Mandrill' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="Mandrill">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="ts" Type="varchar" MaxLength="500" />
+          <Property Name="event" Type="varchar" MaxLength="200" />
+          <Property Name="mssgtext" Type="varchar(max)" />
+          <Property Name="mssghtml" Type="varchar(max)" />
+          <Property Name="mssgfromemail" Type="varchar" MaxLength="200" />
+          <Property Name="mssgfromname" Type="varchar" MaxLength="200" />
+          <Property Name="mssgemail" Type="varchar" MaxLength="200" />
+          <Property Name="mssgsubject" Type="varchar(max)" />
+          <Property Name="mssgsender" Type="varchar" MaxLength="500" />
+          <Property Name="mssgattachments" Type="varchar(max)" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'UtopiansDatabase.dbo.odesk' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="odesk">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Date_from" Type="varchar" MaxLength="100" />
+          <Property Name="Date_to" Type="varchar" MaxLength="100" />
+          <Property Name="firstname" Type="varchar" MaxLength="100" />
+          <Property Name="lastname" Type="varchar" MaxLength="100" />
+          <Property Name="emailid" Type="varchar" MaxLength="100" />
+          <Property Name="contactno" Type="varchar" MaxLength="100" />
+          <Property Name="amount" Type="varchar" MaxLength="100" />
+          <Property Name="noofdays" Type="varchar" MaxLength="100" />
+          <Property Name="code" Type="varchar" MaxLength="100" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'UtopiansDatabase.dbo.PageInfo' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="PageInfo">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="TextId" Type="varchar" MaxLength="100" />
+          <Property Name="TextContent" Type="varchar(max)" />
+          <Property Name="PageNo" Type="varchar" MaxLength="100" />
+          <Property Name="UserId" Type="varchar" MaxLength="100" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'UtopiansDatabase.dbo.SliderImage' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="SliderImage">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="ImageUrlId" Type="varchar" MaxLength="100" />
+          <Property Name="ImageUrl" Type="varchar" MaxLength="100" />
+          <Property Name="ThumbUrlId" Type="varchar" MaxLength="100" />
+          <Property Name="ThumbUrl" Type="varchar" MaxLength="100" />
+          <Property Name="HeadingId" Type="varchar" MaxLength="100" />
+          <Property Name="Heading" Type="varchar" MaxLength="500" />
+          <Property Name="ContentId" Type="varchar" MaxLength="100" />
+          <Property Name="ContentText" Type="varchar(max)" />
+          <Property Name="UrlId" Type="varchar" MaxLength="100" />
+          <Property Name="Url" Type="varchar" MaxLength="100" />
+          <Property Name="UrlTextId" Type="varchar" MaxLength="100" />
+          <Property Name="UrlText" Type="varchar" MaxLength="200" />
+          <Property Name="UserId" Type="varchar" MaxLength="100" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'UtopiansDatabase.dbo.SlidingArticle' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="SlidingArticle">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="HeadingId" Type="varchar" MaxLength="100" />
+          <Property Name="Heading" Type="varchar" MaxLength="500" />
+          <Property Name="UrlId1" Type="varchar" MaxLength="100" />
+          <Property Name="Url2" Type="varchar" MaxLength="100" />
+          <Property Name="UrlId2" Type="varchar" MaxLength="100" />
+          <Property Name="Url3" Type="varchar" MaxLength="100" />
+          <Property Name="UrlId3" Type="varchar" MaxLength="100" />
+          <Property Name="Url1" Type="varchar" MaxLength="100" />
+          <Property Name="ImageId1" Type="varchar" MaxLength="100" />
+          <Property Name="ImageUrl1" Type="varchar" MaxLength="100" />
+          <Property Name="ImageTooltip1" Type="varchar(max)" />
+          <Property Name="ImageAlt1" Type="varchar" MaxLength="200" />
+          <Property Name="ContentId1" Type="varchar" MaxLength="100" />
+          <Property Name="Content1" Type="varchar(max)" />
+          <Property Name="ImageId2" Type="varchar" MaxLength="100" />
+          <Property Name="ImageUrl2" Type="varchar" MaxLength="100" />
+          <Property Name="ImageTooltip2" Type="varchar" MaxLength="500" />
+          <Property Name="ImageAlt2" Type="varchar" MaxLength="500" />
+          <Property Name="ContentId2" Type="varchar" MaxLength="100" />
+          <Property Name="Content2" Type="varchar(max)" />
+          <Property Name="ImageId3" Type="varchar" MaxLength="100" />
+          <Property Name="ImageUrl3" Type="varchar" MaxLength="100" />
+          <Property Name="ImageTooltip3" Type="varchar" MaxLength="500" />
+          <Property Name="ImageAlt3" Type="varchar" MaxLength="500" />
+          <Property Name="ContentId3" Type="varchar" MaxLength="100" />
+          <Property Name="Content3" Type="varchar(max)" />
+          <Property Name="UserId" Type="varchar" MaxLength="100" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'UtopiansDatabase.dbo.SocialNetworkingUrl' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="SocialNetworkingUrl">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="UrlId" Type="varchar" MaxLength="100" />
+          <Property Name="Url" Type="varchar" MaxLength="200" />
+          <Property Name="ImageId" Type="varchar" MaxLength="100" />
+          <Property Name="ImageUrl" Type="varchar" MaxLength="200" />
+          <Property Name="Alt" Type="varchar" MaxLength="500" />
+          <Property Name="ToolTip" Type="varchar" MaxLength="500" />
+          <Property Name="UserId" Type="varchar" MaxLength="100" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'UtopiansDatabase.dbo.UserBackgroundImage' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="UserBackgroundImage">
+          <Key>
+            <PropertyRef Name="Bid" />
+          </Key>
+          <Property Name="Bid" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="ImageUrl" Type="varchar" MaxLength="100" />
+          <Property Name="UserId" Type="varchar" MaxLength="100" />
+          <Property Name="ImageUrlToDel" Type="varchar" MaxLength="100" />
+          <Property Name="path" Type="varchar" MaxLength="100" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'UtopiansDatabase.dbo.UserFolder' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="UserFolder">
+          <Key>
+            <PropertyRef Name="FId" />
+          </Key>
+          <Property Name="FId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="FolderIconName" Type="varchar" MaxLength="100" />
+          <Property Name="FolderImageUrl" Type="varchar" MaxLength="100" />
+          <Property Name="FolderTopImageIconUrl" Type="varchar" MaxLength="100" />
+          <Property Name="FolderTopTitle" Type="varchar" MaxLength="100" />
+          <Property Name="FolderLeftDiv" Type="varchar(max)" />
+          <Property Name="FolderRightDiv" Type="varchar(max)" />
+          <Property Name="FolderBottomText" Type="varchar" MaxLength="100" />
+          <Property Name="Username" Type="varchar" MaxLength="100" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'UtopiansDatabase.dbo.UserMemorySpace' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="UserMemorySpace">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="c_drive" Type="varchar" MaxLength="50" />
+          <Property Name="d_drive" Type="varchar" MaxLength="50" />
+          <Property Name="e_drive" Type="varchar" MaxLength="50" />
+          <Property Name="username" Type="varchar" MaxLength="100" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'UtopiansDatabase.dbo.users' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="users">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Username" Type="varchar" MaxLength="200" />
+          <Property Name="Password" Type="varchar" MaxLength="200" />
+          <Property Name="Role" Type="varchar(max)" />
+          <Property Name="IsActive" Type="varchar" MaxLength="50" />
+          <Property Name="LastActivityDate" Type="varchar" MaxLength="100" />
+          <Property Name="FirstName" Type="varchar" MaxLength="50" />
+          <Property Name="LastName" Type="varchar" MaxLength="50" />
+          <Property Name="Email" Type="varchar" MaxLength="100" />
+          <Property Name="UserImage" Type="varchar" MaxLength="100" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'UtopiansDatabase.dbo.UtopiansTimeLine' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="UtopiansTimeLine">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="evId" Type="varchar" MaxLength="50" />
+          <Property Name="evName" Type="varchar" MaxLength="3000" />
+          <Property Name="evDate" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <Association Name="FK__aspnet_Me__Appli__145C0A3F">
+          <End Role="aspnet_Applications" Type="pcongoModel.Store.aspnet_Applications" Multiplicity="1" />
+          <End Role="aspnet_Membership" Type="pcongoModel.Store.aspnet_Membership" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="aspnet_Applications">
+              <PropertyRef Name="ApplicationId" />
+            </Principal>
+            <Dependent Role="aspnet_Membership">
+              <PropertyRef Name="ApplicationId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__aspnet_Me__UserI__15502E78">
+          <End Role="aspnet_Users" Type="pcongoModel.Store.aspnet_Users" Multiplicity="1" />
+          <End Role="aspnet_Membership" Type="pcongoModel.Store.aspnet_Membership" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="aspnet_Users">
+              <PropertyRef Name="UserId" />
+            </Principal>
+            <Dependent Role="aspnet_Membership">
+              <PropertyRef Name="UserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__aspnet_Pa__Appli__45F365D3">
+          <End Role="aspnet_Applications" Type="pcongoModel.Store.aspnet_Applications" Multiplicity="1" />
+          <End Role="aspnet_Paths" Type="pcongoModel.Store.aspnet_Paths" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="aspnet_Applications">
+              <PropertyRef Name="ApplicationId" />
+            </Principal>
+            <Dependent Role="aspnet_Paths">
+              <PropertyRef Name="ApplicationId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__aspnet_Pe__PathI__4BAC3F29">
+          <End Role="aspnet_Paths" Type="pcongoModel.Store.aspnet_Paths" Multiplicity="1" />
+          <End Role="aspnet_PersonalizationAllUsers" Type="pcongoModel.Store.aspnet_PersonalizationAllUsers" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="aspnet_Paths">
+              <PropertyRef Name="PathId" />
+            </Principal>
+            <Dependent Role="aspnet_PersonalizationAllUsers">
+              <PropertyRef Name="PathId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__aspnet_Pe__PathI__4F7CD00D">
+          <End Role="aspnet_Paths" Type="pcongoModel.Store.aspnet_Paths" Multiplicity="0..1" />
+          <End Role="aspnet_PersonalizationPerUser" Type="pcongoModel.Store.aspnet_PersonalizationPerUser" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="aspnet_Paths">
+              <PropertyRef Name="PathId" />
+            </Principal>
+            <Dependent Role="aspnet_PersonalizationPerUser">
+              <PropertyRef Name="PathId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__aspnet_Pe__UserI__5070F446">
+          <End Role="aspnet_Users" Type="pcongoModel.Store.aspnet_Users" Multiplicity="0..1" />
+          <End Role="aspnet_PersonalizationPerUser" Type="pcongoModel.Store.aspnet_PersonalizationPerUser" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="aspnet_Users">
+              <PropertyRef Name="UserId" />
+            </Principal>
+            <Dependent Role="aspnet_PersonalizationPerUser">
+              <PropertyRef Name="UserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__aspnet_Pr__UserI__29572725">
+          <End Role="aspnet_Users" Type="pcongoModel.Store.aspnet_Users" Multiplicity="1" />
+          <End Role="aspnet_Profile" Type="pcongoModel.Store.aspnet_Profile" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="aspnet_Users">
+              <PropertyRef Name="UserId" />
+            </Principal>
+            <Dependent Role="aspnet_Profile">
+              <PropertyRef Name="UserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__aspnet_Ro__Appli__32E0915F">
+          <End Role="aspnet_Applications" Type="pcongoModel.Store.aspnet_Applications" Multiplicity="1" />
+          <End Role="aspnet_Roles" Type="pcongoModel.Store.aspnet_Roles" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="aspnet_Applications">
+              <PropertyRef Name="ApplicationId" />
+            </Principal>
+            <Dependent Role="aspnet_Roles">
+              <PropertyRef Name="ApplicationId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__aspnet_Us__Appli__0425A276">
+          <End Role="aspnet_Applications" Type="pcongoModel.Store.aspnet_Applications" Multiplicity="1" />
+          <End Role="aspnet_Users" Type="pcongoModel.Store.aspnet_Users" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="aspnet_Applications">
+              <PropertyRef Name="ApplicationId" />
+            </Principal>
+            <Dependent Role="aspnet_Users">
+              <PropertyRef Name="ApplicationId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__aspnet_Us__RoleI__37A5467C">
+          <End Role="aspnet_Roles" Type="pcongoModel.Store.aspnet_Roles" Multiplicity="1" />
+          <End Role="aspnet_UsersInRoles" Type="pcongoModel.Store.aspnet_UsersInRoles" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="aspnet_Roles">
+              <PropertyRef Name="RoleId" />
+            </Principal>
+            <Dependent Role="aspnet_UsersInRoles">
+              <PropertyRef Name="RoleId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__aspnet_Us__UserI__36B12243">
+          <End Role="aspnet_Users" Type="pcongoModel.Store.aspnet_Users" Multiplicity="1" />
+          <End Role="aspnet_UsersInRoles" Type="pcongoModel.Store.aspnet_UsersInRoles" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="aspnet_Users">
+              <PropertyRef Name="UserId" />
+            </Principal>
+            <Dependent Role="aspnet_UsersInRoles">
+              <PropertyRef Name="UserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="pcongoModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="pcongoEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="aspnet_Applications" EntityType="pcongoModel.aspnet_Applications" />
+          <EntitySet Name="aspnet_Membership" EntityType="pcongoModel.aspnet_Membership" />
+          <EntitySet Name="aspnet_Paths" EntityType="pcongoModel.aspnet_Paths" />
+          <EntitySet Name="aspnet_PersonalizationAllUsers" EntityType="pcongoModel.aspnet_PersonalizationAllUsers" />
+          <EntitySet Name="aspnet_PersonalizationPerUser" EntityType="pcongoModel.aspnet_PersonalizationPerUser" />
+          <EntitySet Name="aspnet_Profile" EntityType="pcongoModel.aspnet_Profile" />
+          <EntitySet Name="aspnet_Roles" EntityType="pcongoModel.aspnet_Roles" />
+          <EntitySet Name="aspnet_SchemaVersions" EntityType="pcongoModel.aspnet_SchemaVersions" />
+          <EntitySet Name="aspnet_Users" EntityType="pcongoModel.aspnet_Users" />
+          <EntitySet Name="aspnet_WebEvent_Events" EntityType="pcongoModel.aspnet_WebEvent_Events" />
+          <EntitySet Name="Default_Page" EntityType="pcongoModel.Default_Page" />
+          <EntitySet Name="DefaultMenus" EntityType="pcongoModel.DefaultMenu" />
+          <EntitySet Name="FolderIcons" EntityType="pcongoModel.FolderIcon" />
+          <EntitySet Name="LatestComments" EntityType="pcongoModel.LatestComment" />
+          <EntitySet Name="LatestNews" EntityType="pcongoModel.LatestNew" />
+          <EntitySet Name="LoadImages" EntityType="pcongoModel.LoadImage" />
+          <EntitySet Name="LoadTexts" EntityType="pcongoModel.LoadText" />
+          <EntitySet Name="Mandrills" EntityType="pcongoModel.Mandrill" />
+          <EntitySet Name="odesks" EntityType="pcongoModel.odesk" />
+          <EntitySet Name="PageInfoes" EntityType="pcongoModel.PageInfo" />
+          <EntitySet Name="SliderImages" EntityType="pcongoModel.SliderImage" />
+          <EntitySet Name="SlidingArticles" EntityType="pcongoModel.SlidingArticle" />
+          <EntitySet Name="SocialNetworkingUrls" EntityType="pcongoModel.SocialNetworkingUrl" />
+          <EntitySet Name="UserBackgroundImages" EntityType="pcongoModel.UserBackgroundImage" />
+          <EntitySet Name="UserFolders" EntityType="pcongoModel.UserFolder" />
+          <EntitySet Name="UserMemorySpaces" EntityType="pcongoModel.UserMemorySpace" />
+          <EntitySet Name="users" EntityType="pcongoModel.user" />
+          <EntitySet Name="UtopiansTimeLines" EntityType="pcongoModel.UtopiansTimeLine" />
+          <AssociationSet Name="FK__aspnet_Me__Appli__145C0A3F" Association="pcongoModel.FK__aspnet_Me__Appli__145C0A3F">
+            <End Role="aspnet_Applications" EntitySet="aspnet_Applications" />
+            <End Role="aspnet_Membership" EntitySet="aspnet_Membership" />
+          </AssociationSet>
+          <AssociationSet Name="FK__aspnet_Pa__Appli__45F365D3" Association="pcongoModel.FK__aspnet_Pa__Appli__45F365D3">
+            <End Role="aspnet_Applications" EntitySet="aspnet_Applications" />
+            <End Role="aspnet_Paths" EntitySet="aspnet_Paths" />
+          </AssociationSet>
+          <AssociationSet Name="FK__aspnet_Ro__Appli__32E0915F" Association="pcongoModel.FK__aspnet_Ro__Appli__32E0915F">
+            <End Role="aspnet_Applications" EntitySet="aspnet_Applications" />
+            <End Role="aspnet_Roles" EntitySet="aspnet_Roles" />
+          </AssociationSet>
+          <AssociationSet Name="FK__aspnet_Us__Appli__0425A276" Association="pcongoModel.FK__aspnet_Us__Appli__0425A276">
+            <End Role="aspnet_Applications" EntitySet="aspnet_Applications" />
+            <End Role="aspnet_Users" EntitySet="aspnet_Users" />
+          </AssociationSet>
+          <AssociationSet Name="FK__aspnet_Me__UserI__15502E78" Association="pcongoModel.FK__aspnet_Me__UserI__15502E78">
+            <End Role="aspnet_Users" EntitySet="aspnet_Users" />
+            <End Role="aspnet_Membership" EntitySet="aspnet_Membership" />
+          </AssociationSet>
+          <AssociationSet Name="FK__aspnet_Pe__PathI__4BAC3F29" Association="pcongoModel.FK__aspnet_Pe__PathI__4BAC3F29">
+            <End Role="aspnet_Paths" EntitySet="aspnet_Paths" />
+            <End Role="aspnet_PersonalizationAllUsers" EntitySet="aspnet_PersonalizationAllUsers" />
+          </AssociationSet>
+          <AssociationSet Name="FK__aspnet_Pe__PathI__4F7CD00D" Association="pcongoModel.FK__aspnet_Pe__PathI__4F7CD00D">
+            <End Role="aspnet_Paths" EntitySet="aspnet_Paths" />
+            <End Role="aspnet_PersonalizationPerUser" EntitySet="aspnet_PersonalizationPerUser" />
+          </AssociationSet>
+          <AssociationSet Name="FK__aspnet_Pe__UserI__5070F446" Association="pcongoModel.FK__aspnet_Pe__UserI__5070F446">
+            <End Role="aspnet_Users" EntitySet="aspnet_Users" />
+            <End Role="aspnet_PersonalizationPerUser" EntitySet="aspnet_PersonalizationPerUser" />
+          </AssociationSet>
+          <AssociationSet Name="FK__aspnet_Pr__UserI__29572725" Association="pcongoModel.FK__aspnet_Pr__UserI__29572725">
+            <End Role="aspnet_Users" EntitySet="aspnet_Users" />
+            <End Role="aspnet_Profile" EntitySet="aspnet_Profile" />
+          </AssociationSet>
+          <AssociationSet Name="aspnet_UsersInRoles" Association="pcongoModel.aspnet_UsersInRoles">
+            <End Role="aspnet_Roles" EntitySet="aspnet_Roles" />
+            <End Role="aspnet_Users" EntitySet="aspnet_Users" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="aspnet_Applications">
+          <Key>
+            <PropertyRef Name="ApplicationId" />
+          </Key>
+          <Property Name="ApplicationName" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+          <Property Name="LoweredApplicationName" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+          <Property Name="ApplicationId" Type="Guid" Nullable="false" />
+          <Property Name="Description" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="aspnet_Membership" Relationship="pcongoModel.FK__aspnet_Me__Appli__145C0A3F" FromRole="aspnet_Applications" ToRole="aspnet_Membership" />
+          <NavigationProperty Name="aspnet_Paths" Relationship="pcongoModel.FK__aspnet_Pa__Appli__45F365D3" FromRole="aspnet_Applications" ToRole="aspnet_Paths" />
+          <NavigationProperty Name="aspnet_Roles" Relationship="pcongoModel.FK__aspnet_Ro__Appli__32E0915F" FromRole="aspnet_Applications" ToRole="aspnet_Roles" />
+          <NavigationProperty Name="aspnet_Users" Relationship="pcongoModel.FK__aspnet_Us__Appli__0425A276" FromRole="aspnet_Applications" ToRole="aspnet_Users" />
+        </EntityType>
+        <EntityType Name="aspnet_Membership">
+          <Key>
+            <PropertyRef Name="UserId" />
+          </Key>
+          <Property Name="ApplicationId" Type="Guid" Nullable="false" />
+          <Property Name="UserId" Type="Guid" Nullable="false" />
+          <Property Name="Password" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+          <Property Name="PasswordFormat" Type="Int32" Nullable="false" />
+          <Property Name="PasswordSalt" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+          <Property Name="MobilePIN" Type="String" MaxLength="16" Unicode="true" FixedLength="false" />
+          <Property Name="Email" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+          <Property Name="LoweredEmail" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+          <Property Name="PasswordQuestion" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+          <Property Name="PasswordAnswer" Type="String" MaxLength="128" Unicode="true" FixedLength="false" />
+          <Property Name="IsApproved" Type="Boolean" Nullable="false" />
+          <Property Name="IsLockedOut" Type="Boolean" Nullable="false" />
+          <Property Name="CreateDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="LastLoginDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="LastPasswordChangedDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="LastLockoutDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="FailedPasswordAttemptCount" Type="Int32" Nullable="false" />
+          <Property Name="FailedPasswordAttemptWindowStart" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="FailedPasswordAnswerAttemptCount" Type="Int32" Nullable="false" />
+          <Property Name="FailedPasswordAnswerAttemptWindowStart" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Comment" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="aspnet_Applications" Relationship="pcongoModel.FK__aspnet_Me__Appli__145C0A3F" FromRole="aspnet_Membership" ToRole="aspnet_Applications" />
+          <NavigationProperty Name="aspnet_Users" Relationship="pcongoModel.FK__aspnet_Me__UserI__15502E78" FromRole="aspnet_Membership" ToRole="aspnet_Users" />
+        </EntityType>
+        <EntityType Name="aspnet_Paths">
+          <Key>
+            <PropertyRef Name="PathId" />
+          </Key>
+          <Property Name="ApplicationId" Type="Guid" Nullable="false" />
+          <Property Name="PathId" Type="Guid" Nullable="false" />
+          <Property Name="Path" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+          <Property Name="LoweredPath" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="aspnet_Applications" Relationship="pcongoModel.FK__aspnet_Pa__Appli__45F365D3" FromRole="aspnet_Paths" ToRole="aspnet_Applications" />
+          <NavigationProperty Name="aspnet_PersonalizationAllUsers" Relationship="pcongoModel.FK__aspnet_Pe__PathI__4BAC3F29" FromRole="aspnet_Paths" ToRole="aspnet_PersonalizationAllUsers" />
+          <NavigationProperty Name="aspnet_PersonalizationPerUser" Relationship="pcongoModel.FK__aspnet_Pe__PathI__4F7CD00D" FromRole="aspnet_Paths" ToRole="aspnet_PersonalizationPerUser" />
+        </EntityType>
+        <EntityType Name="aspnet_PersonalizationAllUsers">
+          <Key>
+            <PropertyRef Name="PathId" />
+          </Key>
+          <Property Name="PathId" Type="Guid" Nullable="false" />
+          <Property Name="PageSettings" Type="Binary" Nullable="false" MaxLength="Max" FixedLength="false" />
+          <Property Name="LastUpdatedDate" Type="DateTime" Nullable="false" Precision="3" />
+          <NavigationProperty Name="aspnet_Paths" Relationship="pcongoModel.FK__aspnet_Pe__PathI__4BAC3F29" FromRole="aspnet_PersonalizationAllUsers" ToRole="aspnet_Paths" />
+        </EntityType>
+        <EntityType Name="aspnet_PersonalizationPerUser">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="PathId" Type="Guid" />
+          <Property Name="UserId" Type="Guid" />
+          <Property Name="PageSettings" Type="Binary" Nullable="false" MaxLength="Max" FixedLength="false" />
+          <Property Name="LastUpdatedDate" Type="DateTime" Nullable="false" Precision="3" />
+          <NavigationProperty Name="aspnet_Paths" Relationship="pcongoModel.FK__aspnet_Pe__PathI__4F7CD00D" FromRole="aspnet_PersonalizationPerUser" ToRole="aspnet_Paths" />
+          <NavigationProperty Name="aspnet_Users" Relationship="pcongoModel.FK__aspnet_Pe__UserI__5070F446" FromRole="aspnet_PersonalizationPerUser" ToRole="aspnet_Users" />
+        </EntityType>
+        <EntityType Name="aspnet_Profile">
+          <Key>
+            <PropertyRef Name="UserId" />
+          </Key>
+          <Property Name="UserId" Type="Guid" Nullable="false" />
+          <Property Name="PropertyNames" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="PropertyValuesString" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="PropertyValuesBinary" Type="Binary" Nullable="false" MaxLength="Max" FixedLength="false" />
+          <Property Name="LastUpdatedDate" Type="DateTime" Nullable="false" Precision="3" />
+          <NavigationProperty Name="aspnet_Users" Relationship="pcongoModel.FK__aspnet_Pr__UserI__29572725" FromRole="aspnet_Profile" ToRole="aspnet_Users" />
+        </EntityType>
+        <EntityType Name="aspnet_Roles">
+          <Key>
+            <PropertyRef Name="RoleId" />
+          </Key>
+          <Property Name="ApplicationId" Type="Guid" Nullable="false" />
+          <Property Name="RoleId" Type="Guid" Nullable="false" />
+          <Property Name="RoleName" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+          <Property Name="LoweredRoleName" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+          <Property Name="Description" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="aspnet_Applications" Relationship="pcongoModel.FK__aspnet_Ro__Appli__32E0915F" FromRole="aspnet_Roles" ToRole="aspnet_Applications" />
+          <NavigationProperty Name="aspnet_Users" Relationship="pcongoModel.aspnet_UsersInRoles" FromRole="aspnet_Roles" ToRole="aspnet_Users" />
+        </EntityType>
+        <EntityType Name="aspnet_SchemaVersions">
+          <Key>
+            <PropertyRef Name="Feature" />
+            <PropertyRef Name="CompatibleSchemaVersion" />
+          </Key>
+          <Property Name="Feature" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+          <Property Name="CompatibleSchemaVersion" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+          <Property Name="IsCurrentVersion" Type="Boolean" Nullable="false" />
+        </EntityType>
+        <EntityType Name="aspnet_Users">
+          <Key>
+            <PropertyRef Name="UserId" />
+          </Key>
+          <Property Name="ApplicationId" Type="Guid" Nullable="false" />
+          <Property Name="UserId" Type="Guid" Nullable="false" />
+          <Property Name="UserName" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+          <Property Name="LoweredUserName" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+          <Property Name="MobileAlias" Type="String" MaxLength="16" Unicode="true" FixedLength="false" />
+          <Property Name="IsAnonymous" Type="Boolean" Nullable="false" />
+          <Property Name="LastActivityDate" Type="DateTime" Nullable="false" Precision="3" />
+          <NavigationProperty Name="aspnet_Applications" Relationship="pcongoModel.FK__aspnet_Us__Appli__0425A276" FromRole="aspnet_Users" ToRole="aspnet_Applications" />
+          <NavigationProperty Name="aspnet_Membership" Relationship="pcongoModel.FK__aspnet_Me__UserI__15502E78" FromRole="aspnet_Users" ToRole="aspnet_Membership" />
+          <NavigationProperty Name="aspnet_PersonalizationPerUser" Relationship="pcongoModel.FK__aspnet_Pe__UserI__5070F446" FromRole="aspnet_Users" ToRole="aspnet_PersonalizationPerUser" />
+          <NavigationProperty Name="aspnet_Profile" Relationship="pcongoModel.FK__aspnet_Pr__UserI__29572725" FromRole="aspnet_Users" ToRole="aspnet_Profile" />
+          <NavigationProperty Name="aspnet_Roles" Relationship="pcongoModel.aspnet_UsersInRoles" FromRole="aspnet_Users" ToRole="aspnet_Roles" />
+        </EntityType>
+        <EntityType Name="aspnet_WebEvent_Events">
+          <Key>
+            <PropertyRef Name="EventId" />
+          </Key>
+          <Property Name="EventId" Type="String" Nullable="false" MaxLength="32" Unicode="false" FixedLength="true" />
+          <Property Name="EventTimeUtc" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="EventTime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="EventType" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+          <Property Name="EventSequence" Type="Decimal" Nullable="false" Precision="19" Scale="0" />
+          <Property Name="EventOccurrence" Type="Decimal" Nullable="false" Precision="19" Scale="0" />
+          <Property Name="EventCode" Type="Int32" Nullable="false" />
+          <Property Name="EventDetailCode" Type="Int32" Nullable="false" />
+          <Property Name="Message" Type="String" MaxLength="1024" Unicode="true" FixedLength="false" />
+          <Property Name="ApplicationPath" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+          <Property Name="ApplicationVirtualPath" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+          <Property Name="MachineName" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+          <Property Name="RequestUrl" Type="String" MaxLength="1024" Unicode="true" FixedLength="false" />
+          <Property Name="ExceptionType" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+          <Property Name="Details" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="Default_Page">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Default_Title" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Name="Default_Slider_Image" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Name="Default_Widgets" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Name="Default_Articles_Links" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Name="Default_Menu_Links" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Name="UserID" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="DefaultMenu">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="MenuNameId" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="MenuName" Type="String" MaxLength="500" Unicode="false" FixedLength="false" />
+          <Property Name="MenuDropDownId" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="MenuDropDown" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Name="UserId" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="MenuUrl" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="FolderIcon">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="IconName" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="IconUrl16x16" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="IconUrl32x32" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="IconUrl64x64" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="IconUrl128x128" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="IconUrl256x256" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="LatestComment">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="Url" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="UrlText" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+          <Property Name="Time" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="Heading" Type="String" MaxLength="300" Unicode="false" FixedLength="false" />
+          <Property Name="Message" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Name="UserId" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="LatestNew">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Url" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+          <Property Name="ShortInfo" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+          <Property Name="Message" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Name="UserId" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="LoadImage">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ImageId" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="ImageUrl" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+          <Property Name="ToolTip" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+          <Property Name="Alt" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+          <Property Name="Select_Image_Type" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="UserId" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="page" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="LoadText">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="TextId" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="Text" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Name="UserId" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="TypeConstraint" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="page" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="Type" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="Mandrill">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ts" Type="String" MaxLength="500" Unicode="false" FixedLength="false" />
+          <Property Name="event" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+          <Property Name="mssgtext" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Name="mssghtml" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Name="mssgfromemail" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+          <Property Name="mssgfromname" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+          <Property Name="mssgemail" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+          <Property Name="mssgsubject" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Name="mssgsender" Type="String" MaxLength="500" Unicode="false" FixedLength="false" />
+          <Property Name="mssgattachments" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="odesk">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Date_from" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="Date_to" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="firstname" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="lastname" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="emailid" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="contactno" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="amount" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="noofdays" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="code" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="PageInfo">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="TextId" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="TextContent" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Name="PageNo" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="UserId" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="SliderImage">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ImageUrlId" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="ImageUrl" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="ThumbUrlId" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="ThumbUrl" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="HeadingId" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="Heading" Type="String" MaxLength="500" Unicode="false" FixedLength="false" />
+          <Property Name="ContentId" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="ContentText" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Name="UrlId" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="Url" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="UrlTextId" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="UrlText" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+          <Property Name="UserId" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="SlidingArticle">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="HeadingId" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="Heading" Type="String" MaxLength="500" Unicode="false" FixedLength="false" />
+          <Property Name="UrlId1" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="Url2" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="UrlId2" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="Url3" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="UrlId3" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="Url1" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="ImageId1" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="ImageUrl1" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="ImageTooltip1" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Name="ImageAlt1" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+          <Property Name="ContentId1" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="Content1" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Name="ImageId2" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="ImageUrl2" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="ImageTooltip2" Type="String" MaxLength="500" Unicode="false" FixedLength="false" />
+          <Property Name="ImageAlt2" Type="String" MaxLength="500" Unicode="false" FixedLength="false" />
+          <Property Name="ContentId2" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="Content2" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Name="ImageId3" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="ImageUrl3" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="ImageTooltip3" Type="String" MaxLength="500" Unicode="false" FixedLength="false" />
+          <Property Name="ImageAlt3" Type="String" MaxLength="500" Unicode="false" FixedLength="false" />
+          <Property Name="ContentId3" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="Content3" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Name="UserId" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="SocialNetworkingUrl">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="UrlId" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="Url" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+          <Property Name="ImageId" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="ImageUrl" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+          <Property Name="Alt" Type="String" MaxLength="500" Unicode="false" FixedLength="false" />
+          <Property Name="ToolTip" Type="String" MaxLength="500" Unicode="false" FixedLength="false" />
+          <Property Name="UserId" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="UserBackgroundImage">
+          <Key>
+            <PropertyRef Name="Bid" />
+          </Key>
+          <Property Name="Bid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ImageUrl" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="UserId" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="ImageUrlToDel" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="path" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="UserFolder">
+          <Key>
+            <PropertyRef Name="FId" />
+          </Key>
+          <Property Name="FId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="FolderIconName" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="FolderImageUrl" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="FolderTopImageIconUrl" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="FolderTopTitle" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="FolderLeftDiv" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Name="FolderRightDiv" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Name="FolderBottomText" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="Username" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="UserMemorySpace">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="c_drive" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="d_drive" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="e_drive" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="username" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="user">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Username" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+          <Property Name="Password" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+          <Property Name="Role" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Name="IsActive" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="LastActivityDate" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="FirstName" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="LastName" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="Email" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="UserImage" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="UtopiansTimeLine">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="evId" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="evName" Type="String" MaxLength="3000" Unicode="false" FixedLength="false" />
+          <Property Name="evDate" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <Association Name="FK__aspnet_Me__Appli__145C0A3F">
+          <End Role="aspnet_Applications" Type="pcongoModel.aspnet_Applications" Multiplicity="1" />
+          <End Role="aspnet_Membership" Type="pcongoModel.aspnet_Membership" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="aspnet_Applications">
+              <PropertyRef Name="ApplicationId" />
+            </Principal>
+            <Dependent Role="aspnet_Membership">
+              <PropertyRef Name="ApplicationId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__aspnet_Pa__Appli__45F365D3">
+          <End Role="aspnet_Applications" Type="pcongoModel.aspnet_Applications" Multiplicity="1" />
+          <End Role="aspnet_Paths" Type="pcongoModel.aspnet_Paths" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="aspnet_Applications">
+              <PropertyRef Name="ApplicationId" />
+            </Principal>
+            <Dependent Role="aspnet_Paths">
+              <PropertyRef Name="ApplicationId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__aspnet_Ro__Appli__32E0915F">
+          <End Role="aspnet_Applications" Type="pcongoModel.aspnet_Applications" Multiplicity="1" />
+          <End Role="aspnet_Roles" Type="pcongoModel.aspnet_Roles" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="aspnet_Applications">
+              <PropertyRef Name="ApplicationId" />
+            </Principal>
+            <Dependent Role="aspnet_Roles">
+              <PropertyRef Name="ApplicationId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__aspnet_Us__Appli__0425A276">
+          <End Role="aspnet_Applications" Type="pcongoModel.aspnet_Applications" Multiplicity="1" />
+          <End Role="aspnet_Users" Type="pcongoModel.aspnet_Users" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="aspnet_Applications">
+              <PropertyRef Name="ApplicationId" />
+            </Principal>
+            <Dependent Role="aspnet_Users">
+              <PropertyRef Name="ApplicationId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__aspnet_Me__UserI__15502E78">
+          <End Role="aspnet_Users" Type="pcongoModel.aspnet_Users" Multiplicity="1" />
+          <End Role="aspnet_Membership" Type="pcongoModel.aspnet_Membership" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="aspnet_Users">
+              <PropertyRef Name="UserId" />
+            </Principal>
+            <Dependent Role="aspnet_Membership">
+              <PropertyRef Name="UserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__aspnet_Pe__PathI__4BAC3F29">
+          <End Role="aspnet_Paths" Type="pcongoModel.aspnet_Paths" Multiplicity="1" />
+          <End Role="aspnet_PersonalizationAllUsers" Type="pcongoModel.aspnet_PersonalizationAllUsers" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="aspnet_Paths">
+              <PropertyRef Name="PathId" />
+            </Principal>
+            <Dependent Role="aspnet_PersonalizationAllUsers">
+              <PropertyRef Name="PathId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__aspnet_Pe__PathI__4F7CD00D">
+          <End Role="aspnet_Paths" Type="pcongoModel.aspnet_Paths" Multiplicity="0..1" />
+          <End Role="aspnet_PersonalizationPerUser" Type="pcongoModel.aspnet_PersonalizationPerUser" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="aspnet_Paths">
+              <PropertyRef Name="PathId" />
+            </Principal>
+            <Dependent Role="aspnet_PersonalizationPerUser">
+              <PropertyRef Name="PathId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__aspnet_Pe__UserI__5070F446">
+          <End Role="aspnet_Users" Type="pcongoModel.aspnet_Users" Multiplicity="0..1" />
+          <End Role="aspnet_PersonalizationPerUser" Type="pcongoModel.aspnet_PersonalizationPerUser" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="aspnet_Users">
+              <PropertyRef Name="UserId" />
+            </Principal>
+            <Dependent Role="aspnet_PersonalizationPerUser">
+              <PropertyRef Name="UserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__aspnet_Pr__UserI__29572725">
+          <End Role="aspnet_Users" Type="pcongoModel.aspnet_Users" Multiplicity="1" />
+          <End Role="aspnet_Profile" Type="pcongoModel.aspnet_Profile" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="aspnet_Users">
+              <PropertyRef Name="UserId" />
+            </Principal>
+            <Dependent Role="aspnet_Profile">
+              <PropertyRef Name="UserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="aspnet_UsersInRoles">
+          <End Role="aspnet_Roles" Type="pcongoModel.aspnet_Roles" Multiplicity="*" />
+          <End Role="aspnet_Users" Type="pcongoModel.aspnet_Users" Multiplicity="*" />
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="pcongoModelStoreContainer" CdmEntityContainer="pcongoEntities">
+          <EntitySetMapping Name="aspnet_Applications">
+            <EntityTypeMapping TypeName="pcongoModel.aspnet_Applications">
+              <MappingFragment StoreEntitySet="aspnet_Applications">
+                <ScalarProperty Name="ApplicationName" ColumnName="ApplicationName" />
+                <ScalarProperty Name="LoweredApplicationName" ColumnName="LoweredApplicationName" />
+                <ScalarProperty Name="ApplicationId" ColumnName="ApplicationId" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="aspnet_Membership">
+            <EntityTypeMapping TypeName="pcongoModel.aspnet_Membership">
+              <MappingFragment StoreEntitySet="aspnet_Membership">
+                <ScalarProperty Name="ApplicationId" ColumnName="ApplicationId" />
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
+                <ScalarProperty Name="PasswordFormat" ColumnName="PasswordFormat" />
+                <ScalarProperty Name="PasswordSalt" ColumnName="PasswordSalt" />
+                <ScalarProperty Name="MobilePIN" ColumnName="MobilePIN" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="LoweredEmail" ColumnName="LoweredEmail" />
+                <ScalarProperty Name="PasswordQuestion" ColumnName="PasswordQuestion" />
+                <ScalarProperty Name="PasswordAnswer" ColumnName="PasswordAnswer" />
+                <ScalarProperty Name="IsApproved" ColumnName="IsApproved" />
+                <ScalarProperty Name="IsLockedOut" ColumnName="IsLockedOut" />
+                <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+                <ScalarProperty Name="LastLoginDate" ColumnName="LastLoginDate" />
+                <ScalarProperty Name="LastPasswordChangedDate" ColumnName="LastPasswordChangedDate" />
+                <ScalarProperty Name="LastLockoutDate" ColumnName="LastLockoutDate" />
+                <ScalarProperty Name="FailedPasswordAttemptCount" ColumnName="FailedPasswordAttemptCount" />
+                <ScalarProperty Name="FailedPasswordAttemptWindowStart" ColumnName="FailedPasswordAttemptWindowStart" />
+                <ScalarProperty Name="FailedPasswordAnswerAttemptCount" ColumnName="FailedPasswordAnswerAttemptCount" />
+                <ScalarProperty Name="FailedPasswordAnswerAttemptWindowStart" ColumnName="FailedPasswordAnswerAttemptWindowStart" />
+                <ScalarProperty Name="Comment" ColumnName="Comment" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="aspnet_Paths">
+            <EntityTypeMapping TypeName="pcongoModel.aspnet_Paths">
+              <MappingFragment StoreEntitySet="aspnet_Paths">
+                <ScalarProperty Name="ApplicationId" ColumnName="ApplicationId" />
+                <ScalarProperty Name="PathId" ColumnName="PathId" />
+                <ScalarProperty Name="Path" ColumnName="Path" />
+                <ScalarProperty Name="LoweredPath" ColumnName="LoweredPath" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="aspnet_PersonalizationAllUsers">
+            <EntityTypeMapping TypeName="pcongoModel.aspnet_PersonalizationAllUsers">
+              <MappingFragment StoreEntitySet="aspnet_PersonalizationAllUsers">
+                <ScalarProperty Name="PathId" ColumnName="PathId" />
+                <ScalarProperty Name="PageSettings" ColumnName="PageSettings" />
+                <ScalarProperty Name="LastUpdatedDate" ColumnName="LastUpdatedDate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="aspnet_PersonalizationPerUser">
+            <EntityTypeMapping TypeName="pcongoModel.aspnet_PersonalizationPerUser">
+              <MappingFragment StoreEntitySet="aspnet_PersonalizationPerUser">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="PathId" ColumnName="PathId" />
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+                <ScalarProperty Name="PageSettings" ColumnName="PageSettings" />
+                <ScalarProperty Name="LastUpdatedDate" ColumnName="LastUpdatedDate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="aspnet_Profile">
+            <EntityTypeMapping TypeName="pcongoModel.aspnet_Profile">
+              <MappingFragment StoreEntitySet="aspnet_Profile">
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+                <ScalarProperty Name="PropertyNames" ColumnName="PropertyNames" />
+                <ScalarProperty Name="PropertyValuesString" ColumnName="PropertyValuesString" />
+                <ScalarProperty Name="PropertyValuesBinary" ColumnName="PropertyValuesBinary" />
+                <ScalarProperty Name="LastUpdatedDate" ColumnName="LastUpdatedDate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="aspnet_Roles">
+            <EntityTypeMapping TypeName="pcongoModel.aspnet_Roles">
+              <MappingFragment StoreEntitySet="aspnet_Roles">
+                <ScalarProperty Name="ApplicationId" ColumnName="ApplicationId" />
+                <ScalarProperty Name="RoleId" ColumnName="RoleId" />
+                <ScalarProperty Name="RoleName" ColumnName="RoleName" />
+                <ScalarProperty Name="LoweredRoleName" ColumnName="LoweredRoleName" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="aspnet_SchemaVersions">
+            <EntityTypeMapping TypeName="pcongoModel.aspnet_SchemaVersions">
+              <MappingFragment StoreEntitySet="aspnet_SchemaVersions">
+                <ScalarProperty Name="Feature" ColumnName="Feature" />
+                <ScalarProperty Name="CompatibleSchemaVersion" ColumnName="CompatibleSchemaVersion" />
+                <ScalarProperty Name="IsCurrentVersion" ColumnName="IsCurrentVersion" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="aspnet_Users">
+            <EntityTypeMapping TypeName="pcongoModel.aspnet_Users">
+              <MappingFragment StoreEntitySet="aspnet_Users">
+                <ScalarProperty Name="ApplicationId" ColumnName="ApplicationId" />
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+                <ScalarProperty Name="UserName" ColumnName="UserName" />
+                <ScalarProperty Name="LoweredUserName" ColumnName="LoweredUserName" />
+                <ScalarProperty Name="MobileAlias" ColumnName="MobileAlias" />
+                <ScalarProperty Name="IsAnonymous" ColumnName="IsAnonymous" />
+                <ScalarProperty Name="LastActivityDate" ColumnName="LastActivityDate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="aspnet_WebEvent_Events">
+            <EntityTypeMapping TypeName="pcongoModel.aspnet_WebEvent_Events">
+              <MappingFragment StoreEntitySet="aspnet_WebEvent_Events">
+                <ScalarProperty Name="EventId" ColumnName="EventId" />
+                <ScalarProperty Name="EventTimeUtc" ColumnName="EventTimeUtc" />
+                <ScalarProperty Name="EventTime" ColumnName="EventTime" />
+                <ScalarProperty Name="EventType" ColumnName="EventType" />
+                <ScalarProperty Name="EventSequence" ColumnName="EventSequence" />
+                <ScalarProperty Name="EventOccurrence" ColumnName="EventOccurrence" />
+                <ScalarProperty Name="EventCode" ColumnName="EventCode" />
+                <ScalarProperty Name="EventDetailCode" ColumnName="EventDetailCode" />
+                <ScalarProperty Name="Message" ColumnName="Message" />
+                <ScalarProperty Name="ApplicationPath" ColumnName="ApplicationPath" />
+                <ScalarProperty Name="ApplicationVirtualPath" ColumnName="ApplicationVirtualPath" />
+                <ScalarProperty Name="MachineName" ColumnName="MachineName" />
+                <ScalarProperty Name="RequestUrl" ColumnName="RequestUrl" />
+                <ScalarProperty Name="ExceptionType" ColumnName="ExceptionType" />
+                <ScalarProperty Name="Details" ColumnName="Details" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Default_Page">
+            <EntityTypeMapping TypeName="pcongoModel.Default_Page">
+              <MappingFragment StoreEntitySet="Default_Page">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Default_Title" ColumnName="Default_Title" />
+                <ScalarProperty Name="Default_Slider_Image" ColumnName="Default_Slider_Image" />
+                <ScalarProperty Name="Default_Widgets" ColumnName="Default_Widgets" />
+                <ScalarProperty Name="Default_Articles_Links" ColumnName="Default_Articles_Links" />
+                <ScalarProperty Name="Default_Menu_Links" ColumnName="Default_Menu_Links" />
+                <ScalarProperty Name="UserID" ColumnName="UserID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="DefaultMenus">
+            <EntityTypeMapping TypeName="pcongoModel.DefaultMenu">
+              <MappingFragment StoreEntitySet="DefaultMenu">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="MenuNameId" ColumnName="MenuNameId" />
+                <ScalarProperty Name="MenuName" ColumnName="MenuName" />
+                <ScalarProperty Name="MenuDropDownId" ColumnName="MenuDropDownId" />
+                <ScalarProperty Name="MenuDropDown" ColumnName="MenuDropDown" />
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+                <ScalarProperty Name="MenuUrl" ColumnName="MenuUrl" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="FolderIcons">
+            <EntityTypeMapping TypeName="pcongoModel.FolderIcon">
+              <MappingFragment StoreEntitySet="FolderIcons">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="IconName" ColumnName="IconName" />
+                <ScalarProperty Name="IconUrl16x16" ColumnName="IconUrl16x16" />
+                <ScalarProperty Name="IconUrl32x32" ColumnName="IconUrl32x32" />
+                <ScalarProperty Name="IconUrl64x64" ColumnName="IconUrl64x64" />
+                <ScalarProperty Name="IconUrl128x128" ColumnName="IconUrl128x128" />
+                <ScalarProperty Name="IconUrl256x256" ColumnName="IconUrl256x256" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="LatestComments">
+            <EntityTypeMapping TypeName="pcongoModel.LatestComment">
+              <MappingFragment StoreEntitySet="LatestComment">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Url" ColumnName="Url" />
+                <ScalarProperty Name="UrlText" ColumnName="UrlText" />
+                <ScalarProperty Name="Time" ColumnName="Time" />
+                <ScalarProperty Name="Heading" ColumnName="Heading" />
+                <ScalarProperty Name="Message" ColumnName="Message" />
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="LatestNews">
+            <EntityTypeMapping TypeName="pcongoModel.LatestNew">
+              <MappingFragment StoreEntitySet="LatestNews">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Url" ColumnName="Url" />
+                <ScalarProperty Name="ShortInfo" ColumnName="ShortInfo" />
+                <ScalarProperty Name="Message" ColumnName="Message" />
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="LoadImages">
+            <EntityTypeMapping TypeName="pcongoModel.LoadImage">
+              <MappingFragment StoreEntitySet="LoadImages">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="ImageId" ColumnName="ImageId" />
+                <ScalarProperty Name="ImageUrl" ColumnName="ImageUrl" />
+                <ScalarProperty Name="ToolTip" ColumnName="ToolTip" />
+                <ScalarProperty Name="Alt" ColumnName="Alt" />
+                <ScalarProperty Name="Select_Image_Type" ColumnName="Select_Image_Type" />
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+                <ScalarProperty Name="page" ColumnName="page" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="LoadTexts">
+            <EntityTypeMapping TypeName="pcongoModel.LoadText">
+              <MappingFragment StoreEntitySet="LoadTexts">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="TextId" ColumnName="TextId" />
+                <ScalarProperty Name="Text" ColumnName="Text" />
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+                <ScalarProperty Name="TypeConstraint" ColumnName="TypeConstraint" />
+                <ScalarProperty Name="page" ColumnName="page" />
+                <ScalarProperty Name="Type" ColumnName="Type" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Mandrills">
+            <EntityTypeMapping TypeName="pcongoModel.Mandrill">
+              <MappingFragment StoreEntitySet="Mandrill">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="ts" ColumnName="ts" />
+                <ScalarProperty Name="event" ColumnName="event" />
+                <ScalarProperty Name="mssgtext" ColumnName="mssgtext" />
+                <ScalarProperty Name="mssghtml" ColumnName="mssghtml" />
+                <ScalarProperty Name="mssgfromemail" ColumnName="mssgfromemail" />
+                <ScalarProperty Name="mssgfromname" ColumnName="mssgfromname" />
+                <ScalarProperty Name="mssgemail" ColumnName="mssgemail" />
+                <ScalarProperty Name="mssgsubject" ColumnName="mssgsubject" />
+                <ScalarProperty Name="mssgsender" ColumnName="mssgsender" />
+                <ScalarProperty Name="mssgattachments" ColumnName="mssgattachments" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="odesks">
+            <EntityTypeMapping TypeName="pcongoModel.odesk">
+              <MappingFragment StoreEntitySet="odesk">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="Date_from" ColumnName="Date_from" />
+                <ScalarProperty Name="Date_to" ColumnName="Date_to" />
+                <ScalarProperty Name="firstname" ColumnName="firstname" />
+                <ScalarProperty Name="lastname" ColumnName="lastname" />
+                <ScalarProperty Name="emailid" ColumnName="emailid" />
+                <ScalarProperty Name="contactno" ColumnName="contactno" />
+                <ScalarProperty Name="amount" ColumnName="amount" />
+                <ScalarProperty Name="noofdays" ColumnName="noofdays" />
+                <ScalarProperty Name="code" ColumnName="code" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PageInfoes">
+            <EntityTypeMapping TypeName="pcongoModel.PageInfo">
+              <MappingFragment StoreEntitySet="PageInfo">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="TextId" ColumnName="TextId" />
+                <ScalarProperty Name="TextContent" ColumnName="TextContent" />
+                <ScalarProperty Name="PageNo" ColumnName="PageNo" />
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SliderImages">
+            <EntityTypeMapping TypeName="pcongoModel.SliderImage">
+              <MappingFragment StoreEntitySet="SliderImage">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="ImageUrlId" ColumnName="ImageUrlId" />
+                <ScalarProperty Name="ImageUrl" ColumnName="ImageUrl" />
+                <ScalarProperty Name="ThumbUrlId" ColumnName="ThumbUrlId" />
+                <ScalarProperty Name="ThumbUrl" ColumnName="ThumbUrl" />
+                <ScalarProperty Name="HeadingId" ColumnName="HeadingId" />
+                <ScalarProperty Name="Heading" ColumnName="Heading" />
+                <ScalarProperty Name="ContentId" ColumnName="ContentId" />
+                <ScalarProperty Name="ContentText" ColumnName="ContentText" />
+                <ScalarProperty Name="UrlId" ColumnName="UrlId" />
+                <ScalarProperty Name="Url" ColumnName="Url" />
+                <ScalarProperty Name="UrlTextId" ColumnName="UrlTextId" />
+                <ScalarProperty Name="UrlText" ColumnName="UrlText" />
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SlidingArticles">
+            <EntityTypeMapping TypeName="pcongoModel.SlidingArticle">
+              <MappingFragment StoreEntitySet="SlidingArticle">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="HeadingId" ColumnName="HeadingId" />
+                <ScalarProperty Name="Heading" ColumnName="Heading" />
+                <ScalarProperty Name="UrlId1" ColumnName="UrlId1" />
+                <ScalarProperty Name="Url2" ColumnName="Url2" />
+                <ScalarProperty Name="UrlId2" ColumnName="UrlId2" />
+                <ScalarProperty Name="Url3" ColumnName="Url3" />
+                <ScalarProperty Name="UrlId3" ColumnName="UrlId3" />
+                <ScalarProperty Name="Url1" ColumnName="Url1" />
+                <ScalarProperty Name="ImageId1" ColumnName="ImageId1" />
+                <ScalarProperty Name="ImageUrl1" ColumnName="ImageUrl1" />
+                <ScalarProperty Name="ImageTooltip1" ColumnName="ImageTooltip1" />
+                <ScalarProperty Name="ImageAlt1" ColumnName="ImageAlt1" />
+                <ScalarProperty Name="ContentId1" ColumnName="ContentId1" />
+                <ScalarProperty Name="Content1" ColumnName="Content1" />
+                <ScalarProperty Name="ImageId2" ColumnName="ImageId2" />
+                <ScalarProperty Name="ImageUrl2" ColumnName="ImageUrl2" />
+                <ScalarProperty Name="ImageTooltip2" ColumnName="ImageTooltip2" />
+                <ScalarProperty Name="ImageAlt2" ColumnName="ImageAlt2" />
+                <ScalarProperty Name="ContentId2" ColumnName="ContentId2" />
+                <ScalarProperty Name="Content2" ColumnName="Content2" />
+                <ScalarProperty Name="ImageId3" ColumnName="ImageId3" />
+                <ScalarProperty Name="ImageUrl3" ColumnName="ImageUrl3" />
+                <ScalarProperty Name="ImageTooltip3" ColumnName="ImageTooltip3" />
+                <ScalarProperty Name="ImageAlt3" ColumnName="ImageAlt3" />
+                <ScalarProperty Name="ContentId3" ColumnName="ContentId3" />
+                <ScalarProperty Name="Content3" ColumnName="Content3" />
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SocialNetworkingUrls">
+            <EntityTypeMapping TypeName="pcongoModel.SocialNetworkingUrl">
+              <MappingFragment StoreEntitySet="SocialNetworkingUrl">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="UrlId" ColumnName="UrlId" />
+                <ScalarProperty Name="Url" ColumnName="Url" />
+                <ScalarProperty Name="ImageId" ColumnName="ImageId" />
+                <ScalarProperty Name="ImageUrl" ColumnName="ImageUrl" />
+                <ScalarProperty Name="Alt" ColumnName="Alt" />
+                <ScalarProperty Name="ToolTip" ColumnName="ToolTip" />
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="UserBackgroundImages">
+            <EntityTypeMapping TypeName="pcongoModel.UserBackgroundImage">
+              <MappingFragment StoreEntitySet="UserBackgroundImage">
+                <ScalarProperty Name="Bid" ColumnName="Bid" />
+                <ScalarProperty Name="ImageUrl" ColumnName="ImageUrl" />
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+                <ScalarProperty Name="ImageUrlToDel" ColumnName="ImageUrlToDel" />
+                <ScalarProperty Name="path" ColumnName="path" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="UserFolders">
+            <EntityTypeMapping TypeName="pcongoModel.UserFolder">
+              <MappingFragment StoreEntitySet="UserFolder">
+                <ScalarProperty Name="FId" ColumnName="FId" />
+                <ScalarProperty Name="FolderIconName" ColumnName="FolderIconName" />
+                <ScalarProperty Name="FolderImageUrl" ColumnName="FolderImageUrl" />
+                <ScalarProperty Name="FolderTopImageIconUrl" ColumnName="FolderTopImageIconUrl" />
+                <ScalarProperty Name="FolderTopTitle" ColumnName="FolderTopTitle" />
+                <ScalarProperty Name="FolderLeftDiv" ColumnName="FolderLeftDiv" />
+                <ScalarProperty Name="FolderRightDiv" ColumnName="FolderRightDiv" />
+                <ScalarProperty Name="FolderBottomText" ColumnName="FolderBottomText" />
+                <ScalarProperty Name="Username" ColumnName="Username" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="UserMemorySpaces">
+            <EntityTypeMapping TypeName="pcongoModel.UserMemorySpace">
+              <MappingFragment StoreEntitySet="UserMemorySpace">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="c_drive" ColumnName="c_drive" />
+                <ScalarProperty Name="d_drive" ColumnName="d_drive" />
+                <ScalarProperty Name="e_drive" ColumnName="e_drive" />
+                <ScalarProperty Name="username" ColumnName="username" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="users">
+            <EntityTypeMapping TypeName="pcongoModel.user">
+              <MappingFragment StoreEntitySet="users">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Username" ColumnName="Username" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
+                <ScalarProperty Name="Role" ColumnName="Role" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="LastActivityDate" ColumnName="LastActivityDate" />
+                <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+                <ScalarProperty Name="LastName" ColumnName="LastName" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="UserImage" ColumnName="UserImage" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="UtopiansTimeLines">
+            <EntityTypeMapping TypeName="pcongoModel.UtopiansTimeLine">
+              <MappingFragment StoreEntitySet="UtopiansTimeLine">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="evId" ColumnName="evId" />
+                <ScalarProperty Name="evName" ColumnName="evName" />
+                <ScalarProperty Name="evDate" ColumnName="evDate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <AssociationSetMapping Name="aspnet_UsersInRoles" TypeName="pcongoModel.aspnet_UsersInRoles" StoreEntitySet="aspnet_UsersInRoles">
+            <EndProperty Name="aspnet_Roles">
+              <ScalarProperty Name="RoleId" ColumnName="RoleId" />
+            </EndProperty>
+            <EndProperty Name="aspnet_Users">
+              <ScalarProperty Name="UserId" ColumnName="UserId" />
+            </EndProperty>
+          </AssociationSetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
