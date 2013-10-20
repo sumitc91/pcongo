@@ -177,6 +177,7 @@
     <Compile Include="Mandrill.cs">
       <DependentUpon>pcongoModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\DesktopViewModel.cs" />
     <Compile Include="odesk.cs">
       <DependentUpon>pcongoModel.tt</DependentUpon>
     </Compile>
@@ -327,7 +328,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
     <Folder Include="Resources\css\" />
   </ItemGroup>
   <ItemGroup>

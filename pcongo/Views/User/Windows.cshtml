@@ -1,4 +1,6 @@
-﻿@{
+﻿@model pcongo.Models.DesktopViewModel
+
+@{
     Layout = null;
 }
 
@@ -11,7 +13,7 @@
 </head>
 <body>
     <div>
-        this is windows view
+        @Model.user.Username
     </div>
 </body>
 </html>

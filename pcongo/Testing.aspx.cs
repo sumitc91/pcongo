@@ -31,7 +31,7 @@ namespace pcongo
                 // In the following method call, the second Boolean parameter 
                 // determines whether a persistent authentication cookie
                 // is created.
-
+                Session["username"] = username;
                 FormsAuthentication.RedirectFromLoginPage(username, true);
 
             }

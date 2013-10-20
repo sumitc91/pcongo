@@ -1,4 +1,5 @@
-﻿@{
+﻿@model pcongo.Models.DesktopViewModel
+@{
     Layout = null;
 }
 
@@ -7,43 +8,43 @@
 <head>
 <meta charset="utf-8">
 <meta http-equiv="x-ua-compatible" content="ie=edge; chrome=1" />
-<meta name="description" content="JavaScript desktop environment built with jQuery." />
-<title>jQuery Desktop</title>
+<meta name="description" content="PcOnGo Linux View" />
+<title>@Model.user.FirstName  @Model.user.LastName </title>
 <!--[if lt IE 7]>
 <script>
 window.top.location = 'http://desktop.sonspring.com/ie.html';
 </script>
 <![endif]-->
-<link rel="stylesheet" href="assets/stylesheets/html.css" />
-<link rel="stylesheet" href="assets/stylesheets/desktop.css" />
+<link rel="stylesheet" href="~/Resources/Desktop/Linux/assets/stylesheets/html.css" />
+<link rel="stylesheet" href="~/Resources/Desktop/Linux/assets/stylesheets/desktop.css" />
 <!--[if lt IE 9]>
-<link rel="stylesheet" href="assets/stylesheets/ie.css" />
+<link rel="stylesheet" href="~/Resources/Desktop/Linux/assets/stylesheets/ie.css" />
 <![endif]-->
 </head>
 <body>
 <div class="abs" id="wrapper">
 	<div class="abs" id="desktop">
 		<a class="abs icon" style="left:20px;top:20px;" href="#icon_dock_computer">
-			<img src="assets/images/icons/icon_32_computer.png" />
+			<img src="~/Resources/Desktop/Linux/assets/images/icons/icon_32_computer.png" />
 			Computer
 		</a>
 		<a class="abs icon" style="left:20px;top:100px;" href="#icon_dock_drive">
-			<img src="assets/images/icons/icon_32_drive.png" />
+			<img src="~/Resources/Desktop/Linux/assets/images/icons/icon_32_drive.png" />
 			Hard Drive
 		</a>
 		<a class="abs icon" style="left:20px;top:180px;" href="#icon_dock_disc">
-			<img src="assets/images/icons/icon_32_disc.png" />
+			<img src="~/Resources/Desktop/Linux/assets/images/icons/icon_32_disc.png" />
 			Audio CD
 		</a>
 		<a class="abs icon" style="left:20px;top:260px;" href="#icon_dock_network">
-			<img src="assets/images/icons/icon_32_network.png" />
+			<img src="~/Resources/Desktop/Linux/assets/images/icons/icon_32_network.png" />
 			Network
 		</a>
 		<div id="window_computer" class="abs window">
 			<div class="abs window_inner">
 				<div class="window_top">
 					<span class="float_left">
-						<img src="assets/images/icons/icon_16_computer.png" />
+						<img src="~/Resources/Desktop/Linux/assets/images/icons/icon_16_computer.png" />
 						Computer
 					</span>
 					<span class="float_right">
@@ -83,7 +84,7 @@ window.top.location = 'http://desktop.sonspring.com/ie.html';
 							<tbody>
 								<tr>
 									<td>
-										<img src="assets/images/icons/icon_16_drive.png" />
+										<img src="~/Resources/Desktop/Linux/assets/images/icons/icon_16_drive.png" />
 									</td>
 									<td>
 										Hard Drive
@@ -103,7 +104,7 @@ window.top.location = 'http://desktop.sonspring.com/ie.html';
 								</tr>
 								<tr>
 									<td>
-										<img src="assets/images/icons/icon_16_disc.png" />
+										<img src="~/Resources/Desktop/Linux/assets/images/icons/icon_16_disc.png" />
 									</td>
 									<td>
 										Audio CD
@@ -123,7 +124,7 @@ window.top.location = 'http://desktop.sonspring.com/ie.html';
 								</tr>
 								<tr>
 									<td>
-										<img src="assets/images/icons/icon_16_network.png" />
+										<img src="~/Resources/Desktop/Linux/assets/images/icons/icon_16_network.png" />
 									</td>
 									<td>
 										Network
@@ -143,7 +144,7 @@ window.top.location = 'http://desktop.sonspring.com/ie.html';
 								</tr>
 								<tr>
 									<td>
-										<img src="assets/images/icons/icon_16_folder_remote.png" />
+										<img src="~/Resources/Desktop/Linux/assets/images/icons/icon_16_folder_remote.png" />
 									</td>
 									<td>
 										Shared Project Files
@@ -163,7 +164,7 @@ window.top.location = 'http://desktop.sonspring.com/ie.html';
 								</tr>
 								<tr>
 									<td>
-										<img src="assets/images/icons/icon_16_documents.png" />
+										<img src="~/Resources/Desktop/Linux/assets/images/icons/icon_16_documents.png" />
 									</td>
 									<td>
 										Documents
@@ -183,7 +184,7 @@ window.top.location = 'http://desktop.sonspring.com/ie.html';
 								</tr>
 								<tr>
 									<td>
-										<img src="assets/images/icons/icon_16_system.png" />
+										<img src="~/Resources/Desktop/Linux/assets/images/icons/icon_16_system.png" />
 									</td>
 									<td>
 										Preferences
@@ -203,7 +204,7 @@ window.top.location = 'http://desktop.sonspring.com/ie.html';
 								</tr>
 								<tr>
 									<td>
-										<img src="assets/images/icons/icon_16_trash.png" />
+										<img src="~/Resources/Desktop/Linux/assets/images/icons/icon_16_trash.png" />
 									</td>
 									<td>
 										Trash
@@ -235,7 +236,7 @@ window.top.location = 'http://desktop.sonspring.com/ie.html';
 			<div class="abs window_inner">
 				<div class="window_top">
 					<span class="float_left">
-						<img src="assets/images/icons/icon_16_drive.png" />
+						<img src="~/Resources/Desktop/Linux/assets/images/icons/icon_16_drive.png" />
 						Hard Drive
 					</span>
 					<span class="float_right">
@@ -275,7 +276,7 @@ window.top.location = 'http://desktop.sonspring.com/ie.html';
 							<tbody>
 								<tr>
 									<td>
-										<img src="assets/images/icons/icon_16_page.png" />
+										<img src="~/Resources/Desktop/Linux/assets/images/icons/icon_16_page.png" />
 									</td>
 									<td>
 										.DS_Store
@@ -295,7 +296,7 @@ window.top.location = 'http://desktop.sonspring.com/ie.html';
 								</tr>
 								<tr>
 									<td>
-										<img src="assets/images/icons/icon_16_folder_home.png" />
+										<img src="~/Resources/Desktop/Linux/assets/images/icons/icon_16_folder_home.png" />
 									</td>
 									<td>
 										Default User
@@ -315,7 +316,7 @@ window.top.location = 'http://desktop.sonspring.com/ie.html';
 								</tr>
 								<tr>
 									<td>
-										<img src="assets/images/icons/icon_16_folder.png" />
+										<img src="~/Resources/Desktop/Linux/assets/images/icons/icon_16_folder.png" />
 									</td>
 									<td>
 										Applications
@@ -335,7 +336,7 @@ window.top.location = 'http://desktop.sonspring.com/ie.html';
 								</tr>
 								<tr>
 									<td>
-										<img src="assets/images/icons/icon_16_folder.png" />
+										<img src="~/Resources/Desktop/Linux/assets/images/icons/icon_16_folder.png" />
 									</td>
 									<td>
 										Developer
@@ -355,7 +356,7 @@ window.top.location = 'http://desktop.sonspring.com/ie.html';
 								</tr>
 								<tr>
 									<td>
-										<img src="assets/images/icons/icon_16_folder.png" />
+										<img src="~/Resources/Desktop/Linux/assets/images/icons/icon_16_folder.png" />
 									</td>
 									<td>
 										Library
@@ -375,7 +376,7 @@ window.top.location = 'http://desktop.sonspring.com/ie.html';
 								</tr>
 								<tr>
 									<td>
-										<img src="assets/images/icons/icon_16_folder.png" />
+										<img src="~/Resources/Desktop/Linux/assets/images/icons/icon_16_folder.png" />
 									</td>
 									<td>
 										System
@@ -407,7 +408,7 @@ window.top.location = 'http://desktop.sonspring.com/ie.html';
 			<div class="abs window_inner">
 				<div class="window_top">
 					<span class="float_left">
-						<img src="assets/images/icons/icon_16_disc.png" />
+						<img src="~/Resources/Desktop/Linux/assets/images/icons/icon_16_disc.png" />
 						Audio CD - Title of Album
 					</span>
 					<span class="float_right">
@@ -418,7 +419,7 @@ window.top.location = 'http://desktop.sonspring.com/ie.html';
 				</div>
 				<div class="abs window_content">
 					<div class="window_aside align_center">
-						<img src="assets/images/misc/album_cover.jpg" />
+						<img src="~/Resources/Desktop/Linux/assets/images/misc/album_cover.jpg" />
 						<br />
 						<em>Title of Album</em>
 					</div>
@@ -443,7 +444,7 @@ window.top.location = 'http://desktop.sonspring.com/ie.html';
 							<tbody>
 								<tr>
 									<td>
-										<img src="assets/images/icons/icon_16_music.png" />
+										<img src="~/Resources/Desktop/Linux/assets/images/icons/icon_16_music.png" />
 									</td>
 									<td class="align_center">
 										01
@@ -457,7 +458,7 @@ window.top.location = 'http://desktop.sonspring.com/ie.html';
 								</tr>
 								<tr>
 									<td>
-										<img src="assets/images/icons/icon_16_music.png" />
+										<img src="~/Resources/Desktop/Linux/assets/images/icons/icon_16_music.png" />
 									</td>
 									<td class="align_center">
 										02
@@ -471,7 +472,7 @@ window.top.location = 'http://desktop.sonspring.com/ie.html';
 								</tr>
 								<tr>
 									<td>
-										<img src="assets/images/icons/icon_16_music.png" />
+										<img src="~/Resources/Desktop/Linux/assets/images/icons/icon_16_music.png" />
 									</td>
 									<td class="align_center">
 										03
@@ -485,7 +486,7 @@ window.top.location = 'http://desktop.sonspring.com/ie.html';
 								</tr>
 								<tr>
 									<td>
-										<img src="assets/images/icons/icon_16_music.png" />
+										<img src="~/Resources/Desktop/Linux/assets/images/icons/icon_16_music.png" />
 									</td>
 									<td class="align_center">
 										04
@@ -499,7 +500,7 @@ window.top.location = 'http://desktop.sonspring.com/ie.html';
 								</tr>
 								<tr>
 									<td>
-										<img src="assets/images/icons/icon_16_music.png" />
+										<img src="~/Resources/Desktop/Linux/assets/images/icons/icon_16_music.png" />
 									</td>
 									<td class="align_center">
 										05
@@ -513,7 +514,7 @@ window.top.location = 'http://desktop.sonspring.com/ie.html';
 								</tr>
 								<tr>
 									<td>
-										<img src="assets/images/icons/icon_16_music.png" />
+										<img src="~/Resources/Desktop/Linux/assets/images/icons/icon_16_music.png" />
 									</td>
 									<td class="align_center">
 										06
@@ -527,7 +528,7 @@ window.top.location = 'http://desktop.sonspring.com/ie.html';
 								</tr>
 								<tr>
 									<td>
-										<img src="assets/images/icons/icon_16_music.png" />
+										<img src="~/Resources/Desktop/Linux/assets/images/icons/icon_16_music.png" />
 									</td>
 									<td class="align_center">
 										07
@@ -541,7 +542,7 @@ window.top.location = 'http://desktop.sonspring.com/ie.html';
 								</tr>
 								<tr>
 									<td>
-										<img src="assets/images/icons/icon_16_music.png" />
+										<img src="~/Resources/Desktop/Linux/assets/images/icons/icon_16_music.png" />
 									</td>
 									<td class="align_center">
 										08
@@ -555,7 +556,7 @@ window.top.location = 'http://desktop.sonspring.com/ie.html';
 								</tr>
 								<tr>
 									<td>
-										<img src="assets/images/icons/icon_16_music.png" />
+										<img src="~/Resources/Desktop/Linux/assets/images/icons/icon_16_music.png" />
 									</td>
 									<td class="align_center">
 										09
@@ -569,7 +570,7 @@ window.top.location = 'http://desktop.sonspring.com/ie.html';
 								</tr>
 								<tr>
 									<td>
-										<img src="assets/images/icons/icon_16_music.png" />
+										<img src="~/Resources/Desktop/Linux/assets/images/icons/icon_16_music.png" />
 									</td>
 									<td class="align_center">
 										10
@@ -583,7 +584,7 @@ window.top.location = 'http://desktop.sonspring.com/ie.html';
 								</tr>
 								<tr>
 									<td>
-										<img src="assets/images/icons/icon_16_music.png" />
+										<img src="~/Resources/Desktop/Linux/assets/images/icons/icon_16_music.png" />
 									</td>
 									<td class="align_center">
 										11
@@ -597,7 +598,7 @@ window.top.location = 'http://desktop.sonspring.com/ie.html';
 								</tr>
 								<tr>
 									<td>
-										<img src="assets/images/icons/icon_16_music.png" />
+										<img src="~/Resources/Desktop/Linux/assets/images/icons/icon_16_music.png" />
 									</td>
 									<td class="align_center">
 										12
@@ -611,7 +612,7 @@ window.top.location = 'http://desktop.sonspring.com/ie.html';
 								</tr>
 								<tr>
 									<td class="shrink">
-										<img src="assets/images/icons/icon_16_music.png" />
+										<img src="~/Resources/Desktop/Linux/assets/images/icons/icon_16_music.png" />
 									</td>
 									<td class="align_center">
 										13
@@ -637,7 +638,7 @@ window.top.location = 'http://desktop.sonspring.com/ie.html';
 			<div class="abs window_inner">
 				<div class="window_top">
 					<span class="float_left">
-						<img src="assets/images/icons/icon_16_network.png" />
+						<img src="~/Resources/Desktop/Linux/assets/images/icons/icon_16_network.png" />
 						Network
 					</span>
 					<span class="float_right">
@@ -671,7 +672,7 @@ window.top.location = 'http://desktop.sonspring.com/ie.html';
 							<tbody>
 								<tr>
 									<td>
-										<img src="assets/images/icons/icon_16_server.png" />
+										<img src="~/Resources/Desktop/Linux/assets/images/icons/icon_16_server.png" />
 									</td>
 									<td>
 										Urban Terror - <em>Game Server</em>
@@ -685,7 +686,7 @@ window.top.location = 'http://desktop.sonspring.com/ie.html';
 								</tr>
 								<tr>
 									<td>
-										<img src="assets/images/icons/icon_16_folder_remote.png" />
+										<img src="~/Resources/Desktop/Linux/assets/images/icons/icon_16_folder_remote.png" />
 									</td>
 									<td>
 										Shared Project Files
@@ -699,7 +700,7 @@ window.top.location = 'http://desktop.sonspring.com/ie.html';
 								</tr>
 								<tr>
 									<td>
-										<img src="assets/images/icons/icon_16_vpn.png" />
+										<img src="~/Resources/Desktop/Linux/assets/images/icons/icon_16_vpn.png" />
 									</td>
 									<td>
 										Remote Desktop VPN
@@ -713,7 +714,7 @@ window.top.location = 'http://desktop.sonspring.com/ie.html';
 								</tr>
 								<tr>
 									<td>
-										<img src="assets/images/icons/icon_16_computer.png" />
+										<img src="~/Resources/Desktop/Linux/assets/images/icons/icon_16_computer.png" />
 									</td>
 									<td>
 										Michael Scott
@@ -727,7 +728,7 @@ window.top.location = 'http://desktop.sonspring.com/ie.html';
 								</tr>
 								<tr>
 									<td>
-										<img src="assets/images/icons/icon_16_computer.png" />
+										<img src="~/Resources/Desktop/Linux/assets/images/icons/icon_16_computer.png" />
 									</td>
 									<td>
 										Dwight Schrute
@@ -741,7 +742,7 @@ window.top.location = 'http://desktop.sonspring.com/ie.html';
 								</tr>
 								<tr>
 									<td>
-										<img src="assets/images/icons/icon_16_computer.png" />
+										<img src="~/Resources/Desktop/Linux/assets/images/icons/icon_16_computer.png" />
 									</td>
 									<td>
 										Jim Halpert
@@ -755,7 +756,7 @@ window.top.location = 'http://desktop.sonspring.com/ie.html';
 								</tr>
 								<tr>
 									<td>
-										<img src="assets/images/icons/icon_16_computer.png" />
+										<img src="~/Resources/Desktop/Linux/assets/images/icons/icon_16_computer.png" />
 									</td>
 									<td>
 										Pam Beesly
@@ -769,7 +770,7 @@ window.top.location = 'http://desktop.sonspring.com/ie.html';
 								</tr>
 								<tr>
 									<td>
-										<img src="assets/images/icons/icon_16_computer.png" />
+										<img src="~/Resources/Desktop/Linux/assets/images/icons/icon_16_computer.png" />
 									</td>
 									<td>
 										Ryan Howard
@@ -783,7 +784,7 @@ window.top.location = 'http://desktop.sonspring.com/ie.html';
 								</tr>
 								<tr>
 									<td>
-										<img src="assets/images/icons/icon_16_computer.png" />
+										<img src="~/Resources/Desktop/Linux/assets/images/icons/icon_16_computer.png" />
 									</td>
 									<td>
 										Jan Levinson
@@ -797,7 +798,7 @@ window.top.location = 'http://desktop.sonspring.com/ie.html';
 								</tr>
 								<tr>
 									<td>
-										<img src="assets/images/icons/icon_16_computer.png" />
+										<img src="~/Resources/Desktop/Linux/assets/images/icons/icon_16_computer.png" />
 									</td>
 									<td>
 										Roy Anderson
@@ -811,7 +812,7 @@ window.top.location = 'http://desktop.sonspring.com/ie.html';
 								</tr>
 								<tr>
 									<td>
-										<img src="assets/images/icons/icon_16_computer.png" />
+										<img src="~/Resources/Desktop/Linux/assets/images/icons/icon_16_computer.png" />
 									</td>
 									<td>
 										Stanley Hudson
@@ -825,7 +826,7 @@ window.top.location = 'http://desktop.sonspring.com/ie.html';
 								</tr>
 								<tr>
 									<td>
-										<img src="assets/images/icons/icon_16_computer.png" />
+										<img src="~/Resources/Desktop/Linux/assets/images/icons/icon_16_computer.png" />
 									</td>
 									<td>
 										Kevin Malone
@@ -839,7 +840,7 @@ window.top.location = 'http://desktop.sonspring.com/ie.html';
 								</tr>
 								<tr>
 									<td>
-										<img src="assets/images/icons/icon_16_computer.png" />
+										<img src="~/Resources/Desktop/Linux/assets/images/icons/icon_16_computer.png" />
 									</td>
 									<td>
 										Angela Martin
@@ -853,7 +854,7 @@ window.top.location = 'http://desktop.sonspring.com/ie.html';
 								</tr>
 								<tr>
 									<td>
-										<img src="assets/images/icons/icon_16_computer.png" />
+										<img src="~/Resources/Desktop/Linux/assets/images/icons/icon_16_computer.png" />
 									</td>
 									<td>
 										Oscar Martinez
@@ -867,7 +868,7 @@ window.top.location = 'http://desktop.sonspring.com/ie.html';
 								</tr>
 								<tr>
 									<td>
-										<img src="assets/images/icons/icon_16_computer.png" />
+										<img src="~/Resources/Desktop/Linux/assets/images/icons/icon_16_computer.png" />
 									</td>
 									<td>
 										Phyllis Lapin
@@ -881,7 +882,7 @@ window.top.location = 'http://desktop.sonspring.com/ie.html';
 								</tr>
 								<tr>
 									<td>
-										<img src="assets/images/icons/icon_16_computer.png" />
+										<img src="~/Resources/Desktop/Linux/assets/images/icons/icon_16_computer.png" />
 									</td>
 									<td>
 										Creed Bratton
@@ -895,7 +896,7 @@ window.top.location = 'http://desktop.sonspring.com/ie.html';
 								</tr>
 								<tr>
 									<td>
-										<img src="assets/images/icons/icon_16_computer.png" />
+										<img src="~/Resources/Desktop/Linux/assets/images/icons/icon_16_computer.png" />
 									</td>
 									<td>
 										Meredith Palmer
@@ -909,7 +910,7 @@ window.top.location = 'http://desktop.sonspring.com/ie.html';
 								</tr>
 								<tr>
 									<td>
-										<img src="assets/images/icons/icon_16_computer.png" />
+										<img src="~/Resources/Desktop/Linux/assets/images/icons/icon_16_computer.png" />
 									</td>
 									<td>
 										Toby Flenderson
@@ -923,7 +924,7 @@ window.top.location = 'http://desktop.sonspring.com/ie.html';
 								</tr>
 								<tr>
 									<td>
-										<img src="assets/images/icons/icon_16_computer.png" />
+										<img src="~/Resources/Desktop/Linux/assets/images/icons/icon_16_computer.png" />
 									</td>
 									<td>
 										Darryl Philbin
@@ -937,7 +938,7 @@ window.top.location = 'http://desktop.sonspring.com/ie.html';
 								</tr>
 								<tr>
 									<td>
-										<img src="assets/images/icons/icon_16_computer.png" />
+										<img src="~/Resources/Desktop/Linux/assets/images/icons/icon_16_computer.png" />
 									</td>
 									<td>
 										Kelly Kapoor
@@ -951,7 +952,7 @@ window.top.location = 'http://desktop.sonspring.com/ie.html';
 								</tr>
 								<tr>
 									<td>
-										<img src="assets/images/icons/icon_16_computer.png" />
+										<img src="~/Resources/Desktop/Linux/assets/images/icons/icon_16_computer.png" />
 									</td>
 									<td>
 										Andy Bernard
@@ -1027,10 +1028,10 @@ window.top.location = 'http://desktop.sonspring.com/ie.html';
 				<a class="menu_trigger" href="#">Code</a>
 				<ul class="menu">
 					<li>
-						<a href="assets/stylesheets/desktop.css">Desktop - CSS</a>
+						<a href="~/Resources/Desktop/Linux/assets/stylesheets/desktop.css">Desktop - CSS</a>
 					</li>
 					<li>
-						<a href="assets/javascripts/jquery.desktop.js">Desktop - JavaScript</a>
+						<a href="~/Resources/Desktop/Linux/assets/javascripts/jquery.desktop.js">Desktop - JavaScript</a>
 					</li>
 					<li>
 						<a href="http://github.com/nathansmith/jQuery-Desktop">GitHub Repository</a>
@@ -1055,43 +1056,43 @@ window.top.location = 'http://desktop.sonspring.com/ie.html';
 	</div>
 	<div class="abs" id="bar_bottom">
 		<a class="float_left" href="#" id="show_desktop" title="Show Desktop">
-			<img src="assets/images/icons/icon_22_desktop.png" />
+			<img src="~/Resources/Desktop/Linux/assets/images/icons/icon_22_desktop.png" />
 		</a>
 		<ul id="dock">
 			<li id="icon_dock_computer">
 				<a href="#window_computer">
-					<img src="assets/images/icons/icon_22_computer.png" />
+					<img src="~/Resources/Desktop/Linux/assets/images/icons/icon_22_computer.png" />
 					Computer
 				</a>
 			</li>
 			<li id="icon_dock_drive">
 				<a href="#window_drive">
-					<img src="assets/images/icons/icon_22_drive.png" />
+					<img src="~/Resources/Desktop/Linux/assets/images/icons/icon_22_drive.png" />
 					Hard Drive
 				</a>
 			</li>
 			<li id="icon_dock_disc">
 				<a href="#window_disc">
-					<img src="assets/images/icons/icon_22_disc.png" />
+					<img src="~/Resources/Desktop/Linux/assets/images/icons/icon_22_disc.png" />
 					Audio CD
 				</a>
 			</li>
 			<li id="icon_dock_network">
 				<a href="#window_network">
-					<img src="assets/images/icons/icon_22_network.png" />
+					<img src="~/Resources/Desktop/Linux/assets/images/icons/icon_22_network.png" />
 					Network
 				</a>
 			</li>
 		</ul>
 		<a class="float_right" href="http://www.firehost.com/?ref=spon_nsmith_desktop-sonspring" title="Secure Hosting">
-			<img src="assets/images/misc/firehost.png" />
+			<img src="~/Resources/Desktop/Linux/assets/images/misc/firehost.png" />
 		</a>
 	</div>
 </div>More script and css style
 : <a href="http://www.htmldrive.net/" title="HTML DRIVE - Free DHMTL Scripts,Jquery plugins,Javascript,CSS,CSS3,Html5 Library">www.htmldrive.net </a>
-<script src="assets/javascripts/jquery.js"></script>
-<script src="assets/javascripts/jquery.ui.js"></script>
-<script src="assets/javascripts/jquery.desktop.js"></script>
+<script src="~/Resources/Desktop/Linux/assets/javascripts/jquery.js"></script>
+<script src="~/Resources/Desktop/Linux/assets/javascripts/jquery.ui.js"></script>
+<script src="~/Resources/Desktop/Linux/assets/javascripts/jquery.desktop.js"></script>
 
 </body>
 </html>
